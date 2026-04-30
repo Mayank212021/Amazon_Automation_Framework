@@ -60,17 +60,14 @@ public class testRunner extends AbstractTestNGCucumberTests {
                 "rerun:target/failed_scenario.txt," +
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:");
 
-    
+        // 👉 IMPORTANT: Extent report path (simple रखो अभी)
+        System.setProperty("extent.reporter.spark.out",
+                "target/ExtentReport_" + time + ".html");
       
        
     }
     
-    @AfterSuite
-    public void afterSuite() {
-        ReportRenamer.renameReport();
-    }
-    
-    
+   
     //update for git
 
     // ✅ Failed scenario rerun (Fixed)
