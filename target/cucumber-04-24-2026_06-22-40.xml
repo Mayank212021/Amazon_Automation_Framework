@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="83.249" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-04-24T12:52:41.866483200Z">
+<testcase classname="End to End Amazon Shopping Flow" name="User adds multiple products to cart - #1.1" time="82.833">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="Element &lt;span class=&quot;nav-text&quot;&gt; could not be scrolled into view
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a, clickElement {id=d3fa9dc1-e098-4643-ae67-d10f2d4b5e18}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 150.0, moz:accessibilityChecks: false, moz:buildID: 20260415192539, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32400, moz:profile: C:\Users\mayan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a)] -&gt; xpath: //span[normalize-space()='Sign Out']]
+Session ID: ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span class="nav-text"> could not be scrolled into view
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a, clickElement {id=d3fa9dc1-e098-4643-ae67-d10f2d4b5e18}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 150.0, moz:accessibilityChecks: false, moz:buildID: 20260415192539, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32400, moz:profile: C:\Users\mayan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a)] -> xpath: //span[normalize-space()='Sign Out']]
+Session ID: ebd0febe-a3a2-4ebc-a4e3-db96eed9d65a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObject.checkoutPage.clickSignOut(checkoutPage.java:224)
+	at stepDefinitions.checkoutStepDefinition.select_payment_method(checkoutStepDefinition.java:48)
+	at ✽.User selects the payment method(file:///C:/Users/mayan/eclipse-workspace/AutomationAmazonWeb/src/test/java/features/AmazonPurchase.feature:43)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to chrome browser.......................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Then User move to the Login page............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Kaushik21#" into password field...............passed
+And Click on the Sign In button.............................................passed
+Then user should get successfully logged in.................................passed
+When User clicks in the search field box....................................passed
+And User enters the product name "Thermometer"..............................passed
+And Clicks on the search icon button........................................passed
+Then All "Thermometer" results should be shown on the page..................passed
+And The user selects a "Thermometer" product................................passed
+Then The user navigates to the product details page.........................passed
+When User clicks on the Add to cart button..................................passed
+Then User clicks on the No Thanks button....................................passed
+And Product should add into the cart........................................passed
+And User clicks on the Go to Cart button....................................passed
+Then The user verifies product "Thermometer" is present in cart.............passed
+And The user verifies cart is not empty.....................................passed
+When User clicks on Proceed to Buy button...................................passed
+Then User should navigate to the checkout page..............................passed
+And User selects delivery address...........................................passed
+Then User should be redirected to payment page..............................passed
+And User selects the payment method.........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="User adds multiple products to cart - #1.2" time="40.099">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: #ap_email_login
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [16a812aa-de54-46e4-a1e9-4dac2e8faf69, findElement {using=id, value=ap_email_login}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 150.0, moz:accessibilityChecks: false, moz:buildID: 20260415192539, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34636, moz:profile: C:\Users\mayan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 16a812aa-de54-46e4-a1e9-4dac2e8faf69">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #ap_email_login
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [16a812aa-de54-46e4-a1e9-4dac2e8faf69, findElement {using=id, value=ap_email_login}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 150.0, moz:accessibilityChecks: false, moz:buildID: 20260415192539, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 34636, moz:profile: C:\Users\mayan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 16a812aa-de54-46e4-a1e9-4dac2e8faf69
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
+	at pageObject.LoginPage.enterEmailAddress(LoginPage.java:88)
+	at stepDefinitions.loginStepDefinition.enter_email(loginStepDefinition.java:60)
+	at ✽.User enters the valid phone number "9876543210" into the fieldbox(file:///C:/Users/mayan/eclipse-workspace/AutomationAmazonWeb/src/test/java/features/AmazonPurchase.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to chrome browser.......................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Then User move to the Login page............................................passed
+Given User enters the valid phone number "9876543210" into the fieldbox.....failed
+And click on the Continue button............................................skipped
+And Enter the valid password "Test@123" into password field.................skipped
+And Click on the Sign In button.............................................skipped
+Then user should get successfully logged in.................................skipped
+When User clicks in the search field box....................................skipped
+And User enters the product name "Thermometer"..............................skipped
+And Clicks on the search icon button........................................skipped
+Then All "Thermometer" results should be shown on the page..................skipped
+And The user selects a "Thermometer" product................................skipped
+Then The user navigates to the product details page.........................skipped
+When User clicks on the Add to cart button..................................skipped
+Then User clicks on the No Thanks button....................................skipped
+And Product should add into the cart........................................skipped
+And User clicks on the Go to Cart button....................................skipped
+Then The user verifies product "Thermometer" is present in cart.............skipped
+And The user verifies cart is not empty.....................................skipped
+When User clicks on Proceed to Buy button...................................skipped
+Then User should navigate to the checkout page..............................skipped
+And User selects delivery address...........................................skipped
+Then User should be redirected to payment page..............................skipped
+And User selects the payment method.........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
+........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

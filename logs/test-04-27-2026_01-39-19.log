@@ -1,0 +1,162 @@
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Browser launched successfully
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:19 INFO  Utilities.log - Navigating to Amazon home page
+01:39:23 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:25 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:25 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:25 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:25 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:26 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:39:26 INFO  Utilities.log - Clicking on Sign in link
+01:39:26 INFO  Utilities.log - User is on login page
+01:39:27 INFO  Utilities.log - Entering phone number: 8630718216
+01:39:28 INFO  Utilities.log - Clicking on Sign in link
+01:39:28 INFO  Utilities.log - User is on login page
+01:39:28 INFO  Utilities.log - Clicking on Sign in link
+01:39:28 INFO  Utilities.log - User is on login page
+01:39:28 INFO  Utilities.log - Clicking on Sign in link
+01:39:28 INFO  Utilities.log - User is on login page
+01:39:28 INFO  Utilities.log - Clicking on Sign in link
+01:39:28 INFO  Utilities.log - User is on login page
+01:39:28 INFO  Utilities.log - Clicking on Sign in link
+01:39:28 INFO  Utilities.log - User is on login page
+01:39:28 INFO  Utilities.log - Entering phone number: 9876543210
+01:39:28 INFO  Utilities.log - Entering phone number: 8630718216
+01:39:28 INFO  Utilities.log - Entering phone number: 8630718216
+01:39:28 INFO  Utilities.log - Entering phone number: 9876543210
+01:39:28 INFO  Utilities.log - Entering phone number: 9876543210
+01:39:29 INFO  Utilities.log - Clicking on Continue button
+01:39:29 INFO  Utilities.log - Entering password
+01:39:29 INFO  Utilities.log - Clicking on Continue button
+01:39:29 INFO  Utilities.log - Clicking on Continue button
+01:39:29 INFO  Utilities.log - Clicking on Continue button
+01:39:29 INFO  Utilities.log - Entering password
+01:39:29 INFO  Utilities.log - Entering password
+01:39:29 INFO  Utilities.log - Clicking on Continue button
+01:39:30 INFO  Utilities.log - Clicking on Continue button
+01:39:33 INFO  Utilities.log - Clicking on Sign In button
+01:39:34 INFO  Utilities.log - Clicking on Sign In button
+01:39:34 INFO  Utilities.log - User logged in successfully
+01:39:34 INFO  Utilities.log - Clicking on Sign In button
+01:39:34 INFO  Utilities.log - User logged in successfully
+01:39:34 INFO  Utilities.log - Clicking on search field
+01:39:34 INFO  Utilities.log - User logged in successfully
+01:39:35 INFO  Utilities.log - Clicking on search field
+01:39:35 INFO  Utilities.log - Clicking on search field
+01:39:35 INFO  Utilities.log - Searching product: Thermometer
+01:39:36 INFO  Utilities.log - Searching product: Thermometer
+01:39:36 INFO  Utilities.log - Searching product: Thermometer
+01:39:40 INFO  Utilities.log - Clicking search button
+01:39:40 INFO  Utilities.log - Verifying search results for: Thermometer
+01:39:41 INFO  Utilities.log - Clicking search button
+01:39:41 INFO  Utilities.log - Verifying search results for: Thermometer
+01:39:41 INFO  Utilities.log - ✅ Total products found: 60
+01:39:42 INFO  Utilities.log - Clicking search button
+01:39:42 INFO  Utilities.log - Verifying search results for: Thermometer
+01:39:42 INFO  Utilities.log - ✅ Total products found: 60
+01:39:43 INFO  Utilities.log - ✅ Total products found: 60
+01:39:43 INFO  Utilities.log - Selecting product: Thermometer
+01:39:44 INFO  Utilities.log - Selecting product: Thermometer
+01:39:44 INFO  Utilities.log - Selecting product: Thermometer
+01:39:49 INFO  Utilities.log - Navigated to product details page
+01:39:50 INFO  Utilities.log - Clicking Add to Cart button
+01:39:50 INFO  Utilities.log - Clicking on NoThanks button
+01:39:50 INFO  Utilities.log - Navigated to product details page
+01:39:51 INFO  Utilities.log - Navigated to product details page
+01:39:51 INFO  Utilities.log - Clicking Add to Cart button
+01:39:52 INFO  Utilities.log - Clicking Add to Cart button
+01:39:52 INFO  Utilities.log - Clicking on NoThanks button
+01:39:53 INFO  Utilities.log - Clicking on NoThanks button
+01:39:53 INFO  Utilities.log - Product add into the cart
+01:39:55 INFO  Utilities.log - Product add into the cart
+01:39:55 INFO  Utilities.log - Clicking on Go To Cart button
+01:39:56 INFO  Utilities.log - Product add into the cart
+01:39:56 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+01:39:56 INFO  Utilities.log - 🛒 Cart Count: 3
+01:39:57 INFO  Utilities.log - Clicking on Go To Cart button
+01:39:57 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+01:39:57 INFO  Utilities.log - 🛒 Cart Count: 3
+01:39:58 INFO  Utilities.log - Clicking on Go To Cart button
+01:39:58 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+01:39:58 INFO  Utilities.log - 🛒 Cart Count: 3
+01:40:00 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:40:00 INFO  Utilities.log - Scenario Status: FAILED
+01:40:00 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:40:00 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:40:00 INFO  Utilities.log - Scenario Status: FAILED
+01:40:00 INFO  Utilities.log - Scenario Status: FAILED
+01:40:01 INFO  Utilities.log - Clicking Process to Buy button
+01:40:01 INFO  Utilities.log - User navigate to the Checkout page.
+01:40:01 INFO  Utilities.log - ✅ Clicked Change Address
+01:40:03 INFO  Utilities.log - Clicking Process to Buy button
+01:40:03 INFO  Utilities.log - User navigate to the Checkout page.
+01:40:03 INFO  Utilities.log - ✅ Clicked Change Address
+01:40:03 INFO  Utilities.log - Clicking Process to Buy button
+01:40:03 INFO  Utilities.log - User navigate to the Checkout page.
+01:40:03 INFO  Utilities.log - ✅ Clicked Change Address
+01:40:04 INFO  Utilities.log - ✅ Address selected successfully
+01:40:04 INFO  Utilities.log - ✅ Delivery button pressed
+01:40:04 INFO  Utilities.log - Payment page displayed
+01:40:06 INFO  Utilities.log - ✅ Address selected successfully
+01:40:06 INFO  Utilities.log - ✅ Delivery button pressed
+01:40:06 INFO  Utilities.log - ✅ Address selected successfully
+01:40:06 INFO  Utilities.log - Payment page displayed
+01:40:07 INFO  Utilities.log - ✅ Delivery button pressed
+01:40:07 INFO  Utilities.log - Payment page displayed
+01:40:24 ERROR Utilities.log - ℹ️ No popup present
+01:40:24 INFO  Utilities.log - Selecting Payment Method...
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: net banking
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:25 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+01:40:25 INFO  Utilities.log - ✅ Scan & Pay Selected
+01:40:25 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+01:40:27 ERROR Utilities.log - ℹ️ No popup present
+01:40:27 INFO  Utilities.log - Selecting Payment Method...
+01:40:27 ERROR Utilities.log - ℹ️ No popup present
+01:40:27 INFO  Utilities.log - Selecting Payment Method...
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: net banking
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - ✅ Scan & Pay Selected
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: net banking
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: 
+01:40:27 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+01:40:27 INFO  Utilities.log - ✅ Scan & Pay Selected
+01:40:27 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+01:40:28 INFO  Utilities.log - ✅ Clicked on amazon logo
+01:40:30 INFO  Utilities.log - ✅ Clicked on amazon logo
+01:40:30 INFO  Utilities.log - ✅ Clicked on amazon logo
+01:40:35 INFO  Utilities.log - Clicking signout button
+01:40:37 INFO  Utilities.log - Clicking signout button
+01:40:37 INFO  Utilities.log - ✔ Clicked on Home logo
+01:40:37 INFO  Utilities.log - Scenario Status: PASSED
+01:40:38 INFO  Utilities.log - Clicking signout button
+01:40:39 INFO  Utilities.log - ✔ Clicked on Home logo
+01:40:39 INFO  Utilities.log - Scenario Status: PASSED
+01:40:39 INFO  Utilities.log - ✔ Clicked on Home logo
+01:40:39 INFO  Utilities.log - Scenario Status: PASSED

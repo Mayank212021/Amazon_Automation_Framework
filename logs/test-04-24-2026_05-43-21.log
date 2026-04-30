@@ -1,0 +1,141 @@
+05:43:22 INFO  Utilities.log - Launching Chrome browser
+05:43:22 INFO  Utilities.log - Launching Chrome browser
+05:43:22 INFO  Utilities.log - Navigating to Amazon home page
+05:43:22 INFO  Utilities.log - Navigating to Amazon home page
+05:43:24 INFO  Utilities.log - Launching Chrome browser
+05:43:24 INFO  Utilities.log - Navigating to Amazon home page
+05:43:24 INFO  Utilities.log - Launching Chrome browser
+05:43:24 INFO  Utilities.log - Navigating to Amazon home page
+05:43:25 INFO  Utilities.log - Launching Chrome browser
+05:43:25 INFO  Utilities.log - Navigating to Amazon home page
+05:43:25 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:25 INFO  Utilities.log - Launching Chrome browser
+05:43:25 INFO  Utilities.log - Navigating to Amazon home page
+05:43:26 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:28 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:30 INFO  Utilities.log - Clicking on Sign in link
+05:43:30 INFO  Utilities.log - User is on login page
+05:43:30 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:30 INFO  Utilities.log - Entering phone number: 9876543210
+05:43:32 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:33 INFO  Utilities.log - Clicking on Continue button
+05:43:33 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:43:34 INFO  Utilities.log - Clicking on Sign in link
+05:43:34 INFO  Utilities.log - User is on login page
+05:43:35 INFO  Utilities.log - Entering phone number: 8630718216
+05:43:36 INFO  Utilities.log - Clicking on Sign in link
+05:43:36 INFO  Utilities.log - User is on login page
+05:43:36 INFO  Utilities.log - Entering phone number: 8630718216
+05:43:36 INFO  Utilities.log - Clicking on Continue button
+05:43:36 INFO  Utilities.log - Entering password
+05:43:37 INFO  Utilities.log - Clicking on Sign in link
+05:43:37 INFO  Utilities.log - User is on login page
+05:43:37 INFO  Utilities.log - Clicking on Continue button
+05:43:37 INFO  Utilities.log - Entering password
+05:43:38 INFO  Utilities.log - Clicking on Sign in link
+05:43:38 INFO  Utilities.log - User is on login page
+05:43:39 INFO  Utilities.log - Clicking on Sign In button
+05:43:40 INFO  Utilities.log - User logged in successfully
+05:43:40 INFO  Utilities.log - Clicking on Sign in link
+05:43:40 INFO  Utilities.log - User is on login page
+05:43:40 INFO  Utilities.log - Clicking on Sign In button
+05:43:40 INFO  Utilities.log - Clicking on search field
+05:43:41 INFO  Utilities.log - Searching product: Thermometer
+05:43:41 INFO  Utilities.log - User logged in successfully
+05:43:41 INFO  Utilities.log - Clicking on search field
+05:43:41 INFO  Utilities.log - Searching product: Thermometer
+05:43:44 INFO  Utilities.log - Clicking search button
+05:43:44 INFO  Utilities.log - Verifying search results for: Thermometer
+05:43:45 INFO  Utilities.log - ✅ Total products found: 60
+05:43:46 INFO  Utilities.log - Clicking search button
+05:43:46 INFO  Utilities.log - Verifying search results for: Thermometer
+05:43:46 INFO  Utilities.log - ✅ Total products found: 60
+05:43:47 INFO  Utilities.log - Scenario Status: FAILED
+05:43:49 INFO  Utilities.log - Scenario Status: FAILED
+05:43:49 INFO  Utilities.log - Selecting product: Thermometer
+05:43:50 INFO  Utilities.log - Selecting product: Thermometer
+05:43:51 INFO  Utilities.log - Scenario Status: FAILED
+05:43:51 INFO  Utilities.log - Navigated to product details page
+05:43:51 INFO  Utilities.log - Navigated to product details page
+05:43:54 INFO  Utilities.log - Clicking Add to Cart button
+05:43:55 INFO  Utilities.log - Clicking Add to Cart button
+05:44:03 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+05:44:03 INFO  Utilities.log - Scenario Status: FAILED
+05:44:04 ERROR Utilities.log - ❌ No Thanks popup not displayed
+05:44:04 INFO  Utilities.log - Clicking on NoThanks button
+05:44:04 INFO  Utilities.log - Product add into the cart
+05:44:05 ERROR Utilities.log - ❌ No Thanks popup not displayed
+05:44:05 INFO  Utilities.log - Clicking on NoThanks button
+05:44:05 INFO  Utilities.log - Clicking on Go To Cart button
+05:44:06 INFO  Utilities.log - Product add into the cart
+05:44:07 INFO  Utilities.log - Clicking on Go To Cart button
+05:44:08 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+05:44:08 INFO  Utilities.log - 🛒 Cart Count: 4
+05:44:08 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+05:44:08 INFO  Utilities.log - 🛒 Cart Count: 4
+05:44:13 INFO  Utilities.log - Clicking Process to Buy button
+05:44:13 INFO  Utilities.log - User navigate to the Checkout page.
+05:44:13 INFO  Utilities.log - Clicking Process to Buy button
+05:44:13 INFO  Utilities.log - User navigate to the Checkout page.
+05:44:13 INFO  Utilities.log - ✅ Clicked Change Address
+05:44:13 INFO  Utilities.log - ✅ Clicked Change Address
+05:44:16 INFO  Utilities.log - ✅ Address selected successfully
+05:44:16 INFO  Utilities.log - ✅ Address selected successfully
+05:44:16 INFO  Utilities.log - ✅ Delivery button pressed
+05:44:16 INFO  Utilities.log - ✅ Delivery button pressed
+05:44:16 INFO  Utilities.log - Payment page displayed
+05:44:16 INFO  Utilities.log - Payment page displayed
+05:44:36 ERROR Utilities.log - ℹ️ No popup present
+05:44:36 INFO  Utilities.log - Selecting Payment Method...
+05:44:36 ERROR Utilities.log - ℹ️ No popup present
+05:44:36 INFO  Utilities.log - Selecting Payment Method...
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: net banking
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: net banking
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: 
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: emi
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: emi
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+05:44:37 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+05:44:37 INFO  Utilities.log - ✅ Scan & Pay Selected
+05:44:37 INFO  Utilities.log - ✅ Scan & Pay Selected
+05:44:37 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+05:44:37 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+05:44:37 INFO  Utilities.log - ✅ Clicked on amazon logo
+05:44:37 INFO  Utilities.log - ✅ Clicked on amazon logo
+05:44:41 INFO  Utilities.log - Scenario Status: FAILED
+05:44:41 INFO  Utilities.log - Scenario Status: FAILED
+05:44:45 INFO  Utilities.log - 🔥 Rerunning Failed Scenarios...
+05:44:45 INFO  Utilities.log - 👉 Rerun Attempt: 1
+05:44:50 INFO  Utilities.log - Launching Chrome browser
+05:44:50 INFO  Utilities.log - Navigating to Amazon home page
+05:44:51 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:45:01 INFO  Utilities.log - Clicking on Sign in link
+05:45:01 INFO  Utilities.log - User is on login page
+05:45:11 INFO  Utilities.log - Scenario Status: FAILED
+05:45:19 INFO  Utilities.log - Launching Chrome browser
+05:45:19 INFO  Utilities.log - Navigating to Amazon home page
+05:45:20 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:45:30 INFO  Utilities.log - Clicking on Sign in link
+05:45:30 INFO  Utilities.log - User is on login page
+05:45:41 INFO  Utilities.log - Scenario Status: FAILED
+05:45:43 INFO  Utilities.log - 👉 Rerun Attempt: 2
+05:45:49 INFO  Utilities.log - Launching Chrome browser
+05:45:49 INFO  Utilities.log - Navigating to Amazon home page
+05:45:50 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:46:00 INFO  Utilities.log - Clicking on Sign in link
+05:46:00 INFO  Utilities.log - User is on login page
+05:46:10 INFO  Utilities.log - Scenario Status: FAILED
+05:46:18 INFO  Utilities.log - Launching Chrome browser
+05:46:18 INFO  Utilities.log - Navigating to Amazon home page
+05:46:19 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:46:29 INFO  Utilities.log - Clicking on Sign in link
+05:46:29 INFO  Utilities.log - User is on login page
+05:46:40 INFO  Utilities.log - Scenario Status: FAILED

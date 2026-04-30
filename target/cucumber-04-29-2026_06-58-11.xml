@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="99.468" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-04-29T13:28:12.926893800Z">
+<testcase classname="End to End Amazon Shopping Flow" name="Valid user adds product to cart - #1.1" time="99.005">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Kaushik21#" into password field...............passed
+And Click on the Sign In button.............................................passed
+Then user should get "success"..............................................passed
+When User clicks in the search field box....................................passed
+And User enters the product name "Thermometer"..............................passed
+And Clicks on the search icon button........................................passed
+Then All "Thermometer" results should be shown on the page..................passed
+And The user selects a "Thermometer" product................................passed
+Then The user navigates to the product details page.........................passed
+When User clicks on the Add to cart button..................................passed
+Then User clicks on the No Thanks button....................................passed
+And Product should add into the cart........................................passed
+And User clicks on the Go to Cart button....................................passed
+Then The user verifies product "Thermometer" is present in cart.............passed
+And The user verifies cart is not empty.....................................passed
+When User clicks on Proceed to Buy button...................................passed
+Then User should navigate to the checkout page..............................passed
+And User selects delivery address...........................................passed
+Then User should be redirected to payment page..............................passed
+And User selects the payment method.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="Invalid user should not login - #1.1" time="21.575">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "7520720735" into the fieldbox.....passed
+And click on the Continue button............................................passed
+Then user should get "error"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="Valid user enters wrong password - #1.1" time="25.717">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Test@123" into password field.................passed
+And Click on the Sign In button.............................................passed
+Then user should get "wrong_password".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

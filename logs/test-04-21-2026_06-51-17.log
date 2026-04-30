@@ -1,0 +1,20 @@
+06:51:17 INFO  Utilities.log - Launching Chrome browser
+06:51:17 INFO  Utilities.log - Navigating to Amazon home page
+06:51:19 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:51:20 INFO  Utilities.log - Clicking on Sign in link
+06:51:20 INFO  Utilities.log - User is on login page
+06:51:20 INFO  Utilities.log - Entering phone number: 9876543210
+06:51:22 INFO  Utilities.log - Clicking on Continue button
+06:51:53 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+06:51:54 INFO  Utilities.log - Scenario Status: FAILED
+06:51:58 INFO  Utilities.log - Launching Chrome browser
+06:51:58 INFO  Utilities.log - Navigating to Amazon home page
+06:52:01 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:52:02 INFO  Utilities.log - Clicking on Sign in link
+06:52:02 INFO  Utilities.log - User is on login page
+06:52:02 INFO  Utilities.log - Entering phone number: 9876543210
+06:52:04 INFO  Utilities.log - Clicking on Continue button
+06:52:34 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+06:52:35 INFO  Utilities.log - Scenario Status: FAILED

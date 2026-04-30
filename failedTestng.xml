@@ -1,0 +1,24 @@
+<suite name="RerunSuite" parallel="tests" thread-count="3">
+
+    <test name="Chrome Rerun">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testRunner.failedTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Edge Rerun">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testRunner.failedTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Rerun">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="testRunner.failedTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,131 @@
+07:08:42 INFO  Utilities.log - Browser launched successfully
+07:08:42 INFO  Utilities.log - Browser launched successfully
+07:08:42 INFO  Utilities.log - Browser launched successfully
+07:08:42 INFO  Utilities.log - Navigating to Amazon home page
+07:08:42 INFO  Utilities.log - Navigating to Amazon home page
+07:08:42 INFO  Utilities.log - Navigating to Amazon home page
+07:08:45 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:08:46 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:08:47 INFO  Utilities.log - Clicking on Sign in link
+07:08:47 INFO  Utilities.log - User is on login page
+07:08:47 INFO  Utilities.log - Clicking on Sign in link
+07:08:47 INFO  Utilities.log - User is on login page
+07:08:47 INFO  Utilities.log - Entering phone number: 8630718216
+07:08:47 INFO  Utilities.log - Entering phone number: 8630718216
+07:08:47 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:08:49 INFO  Utilities.log - Clicking on Continue button
+07:08:49 INFO  Utilities.log - Clicking on Continue button
+07:08:49 INFO  Utilities.log - Entering password
+07:08:49 INFO  Utilities.log - Entering password
+07:08:49 INFO  Utilities.log - Clicking on Sign in link
+07:08:49 INFO  Utilities.log - User is on login page
+07:08:49 INFO  Utilities.log - Entering phone number: 8630718216
+07:08:49 INFO  Utilities.log - Clicking on Continue button
+07:08:51 INFO  Utilities.log - Entering password
+07:08:52 INFO  Utilities.log - Clicking on Sign In button
+07:08:53 INFO  Utilities.log - User logged in successfully
+07:08:53 INFO  Utilities.log - Clicking on Sign In button
+07:08:53 INFO  Utilities.log - User logged in successfully
+07:08:53 INFO  Utilities.log - Clicking on search field
+07:08:54 INFO  Utilities.log - Clicking on search field
+07:08:54 INFO  Utilities.log - Searching product: Thermometer
+07:08:55 INFO  Utilities.log - Clicking on Sign In button
+07:08:55 INFO  Utilities.log - Searching product: Thermometer
+07:08:55 INFO  Utilities.log - User logged in successfully
+07:08:55 INFO  Utilities.log - Clicking on search field
+07:08:55 INFO  Utilities.log - Searching product: Thermometer
+07:08:56 INFO  Utilities.log - Clicking search button
+07:08:56 INFO  Utilities.log - Verifying search results for: Thermometer
+07:08:57 INFO  Utilities.log - Scenario Status: FAILED
+07:08:58 INFO  Utilities.log - Clicking search button
+07:08:58 INFO  Utilities.log - Verifying search results for: Thermometer
+07:08:59 INFO  Utilities.log - ✅ Total products found: 60
+07:08:59 INFO  Utilities.log - Clicking search button
+07:08:59 INFO  Utilities.log - Verifying search results for: Thermometer
+07:09:00 INFO  Utilities.log - ✅ Total products found: 60
+07:09:00 INFO  Utilities.log - Selecting product: Thermometer
+07:09:00 INFO  Utilities.log - Selecting product: Thermometer
+07:09:03 INFO  Utilities.log - Browser launched successfully
+07:09:03 INFO  Utilities.log - Navigating to Amazon home page
+07:09:05 INFO  Utilities.log - Navigated to product details page
+07:09:05 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:09:06 INFO  Utilities.log - Clicking Add to Cart button
+07:09:06 INFO  Utilities.log - Navigated to product details page
+07:09:07 INFO  Utilities.log - Clicking on Sign in link
+07:09:07 INFO  Utilities.log - User is on login page
+07:09:07 INFO  Utilities.log - Clicking on NoThanks button
+07:09:07 INFO  Utilities.log - Product add into the cart
+07:09:07 INFO  Utilities.log - Clicking Add to Cart button
+07:09:07 INFO  Utilities.log - Entering phone number: 9876543210
+07:09:07 INFO  Utilities.log - Clicking on Continue button
+07:09:08 INFO  Utilities.log - Clicking on NoThanks button
+07:09:08 INFO  Utilities.log - Product add into the cart
+07:09:11 INFO  Utilities.log - Clicking on Go To Cart button
+07:09:11 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+07:09:11 INFO  Utilities.log - 🛒 Cart Count: 6
+07:09:12 INFO  Utilities.log - Clicking on Go To Cart button
+07:09:13 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+07:09:13 INFO  Utilities.log - 🛒 Cart Count: 6
+07:09:16 INFO  Utilities.log - Clicking Process to Buy button
+07:09:16 INFO  Utilities.log - User navigate to the Checkout page.
+07:09:17 INFO  Utilities.log - ✅ Clicked Change Address
+07:09:18 INFO  Utilities.log - Clicking Process to Buy button
+07:09:18 INFO  Utilities.log - User navigate to the Checkout page.
+07:09:18 INFO  Utilities.log - ✅ Clicked Change Address
+07:09:19 INFO  Utilities.log - ✅ Address selected successfully
+07:09:20 INFO  Utilities.log - ✅ Delivery button pressed
+07:09:20 INFO  Utilities.log - Payment page displayed
+07:09:21 INFO  Utilities.log - ✅ Address selected successfully
+07:09:22 INFO  Utilities.log - ✅ Delivery button pressed
+07:09:22 INFO  Utilities.log - Payment page displayed
+07:09:38 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+07:09:38 INFO  Utilities.log - Scenario Status: FAILED
+07:09:40 ERROR Utilities.log - ℹ️ No popup present
+07:09:40 INFO  Utilities.log - Selecting Payment Method...
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: net banking
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: emi
+07:09:40 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+07:09:40 INFO  Utilities.log - ✅ Scan & Pay Selected
+07:09:40 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+07:09:42 ERROR Utilities.log - ℹ️ No popup present
+07:09:42 INFO  Utilities.log - Selecting Payment Method...
+07:09:42 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+07:09:42 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:42 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:42 INFO  Utilities.log - 👉 Payment Option Found: net banking
+07:09:42 INFO  Utilities.log - 👉 Payment Option Found: 
+07:09:43 INFO  Utilities.log - ✅ Clicked on amazon logo
+07:09:43 INFO  Utilities.log - 👉 Payment Option Found: emi
+07:09:43 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+07:09:43 INFO  Utilities.log - ✅ Scan & Pay Selected
+07:09:43 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+07:09:47 INFO  Utilities.log - ✅ Clicked on amazon logo
+07:09:53 INFO  Utilities.log - Clicking signout button
+07:09:56 INFO  Utilities.log - ✔ Clicked on Home logo
+07:09:56 INFO  Utilities.log - Scenario Status: PASSED
+07:09:57 INFO  Utilities.log - Scenario Status: FAILED
+07:09:58 INFO  Utilities.log - Browser launched successfully
+07:09:58 INFO  Utilities.log - Navigating to Amazon home page
+07:10:00 INFO  Utilities.log - Browser launched successfully
+07:10:00 INFO  Utilities.log - Navigating to Amazon home page
+07:10:02 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:10:03 INFO  Utilities.log - Clicking on Sign in link
+07:10:03 INFO  Utilities.log - User is on login page
+07:10:03 INFO  Utilities.log - Clicking on Hello, Sign in option
+07:10:03 INFO  Utilities.log - Entering phone number: 9876543210
+07:10:03 INFO  Utilities.log - Clicking on Continue button
+07:10:04 INFO  Utilities.log - Clicking on Sign in link
+07:10:04 INFO  Utilities.log - User is on login page
+07:10:04 INFO  Utilities.log - Entering phone number: 9876543210
+07:10:04 INFO  Utilities.log - Clicking on Continue button
+07:10:34 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+07:10:34 INFO  Utilities.log - Scenario Status: FAILED
+07:10:35 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+07:10:35 INFO  Utilities.log - Scenario Status: FAILED

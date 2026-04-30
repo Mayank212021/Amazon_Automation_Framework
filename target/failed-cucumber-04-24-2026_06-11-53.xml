@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.109" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-04-24T12:41:53.577101600Z">
+<testcase classname="End to End Amazon Shopping Flow" name="User adds multiple products to cart - #1.1" time="0.046">
+<failure type="java.lang.RuntimeException" message="❌ Browser value is NULL. Check TestRunner setup">
+<![CDATA[java.lang.RuntimeException: ❌ Browser value is NULL. Check TestRunner setup
+	at stepDefinitions.hooks.setup(hooks.java:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to chrome browser.......................................skipped
+When I navigate to Home page of the Amazon web application..................skipped
+And Go to the Hello,Sign in option..........................................skipped
+And Click on the Sign in link...............................................skipped
+Then User move to the Login page............................................skipped
+Given User enters the valid phone number "8630718216" into the fieldbox.....skipped
+And click on the Continue button............................................skipped
+And Enter the valid password "Kaushik21#" into password field...............skipped
+And Click on the Sign In button.............................................skipped
+Then user should get successfully logged in.................................skipped
+When User clicks in the search field box....................................skipped
+And User enters the product name "Thermometer"..............................skipped
+And Clicks on the search icon button........................................skipped
+Then All "Thermometer" results should be shown on the page..................skipped
+And The user selects a "Thermometer" product................................skipped
+Then The user navigates to the product details page.........................skipped
+When User clicks on the Add to cart button..................................skipped
+Then User clicks on the No Thanks button....................................skipped
+And Product should add into the cart........................................skipped
+And User clicks on the Go to Cart button....................................skipped
+Then The user verifies product "Thermometer" is present in cart.............skipped
+And The user verifies cart is not empty.....................................skipped
+When User clicks on Proceed to Buy button...................................skipped
+Then User should navigate to the checkout page..............................skipped
+And User selects delivery address...........................................skipped
+Then User should be redirected to payment page..............................skipped
+And User selects the payment method.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="User adds multiple products to cart - #1.2" time="0.032">
+<failure type="java.lang.RuntimeException" message="❌ Browser value is NULL. Check TestRunner setup">
+<![CDATA[java.lang.RuntimeException: ❌ Browser value is NULL. Check TestRunner setup
+	at stepDefinitions.hooks.setup(hooks.java:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User navigate to chrome browser.......................................skipped
+When I navigate to Home page of the Amazon web application..................skipped
+And Go to the Hello,Sign in option..........................................skipped
+And Click on the Sign in link...............................................skipped
+Then User move to the Login page............................................skipped
+Given User enters the valid phone number "9876543210" into the fieldbox.....skipped
+And click on the Continue button............................................skipped
+And Enter the valid password "Test@123" into password field.................skipped
+And Click on the Sign In button.............................................skipped
+Then user should get successfully logged in.................................skipped
+When User clicks in the search field box....................................skipped
+And User enters the product name "Thermometer"..............................skipped
+And Clicks on the search icon button........................................skipped
+Then All "Thermometer" results should be shown on the page..................skipped
+And The user selects a "Thermometer" product................................skipped
+Then The user navigates to the product details page.........................skipped
+When User clicks on the Add to cart button..................................skipped
+Then User clicks on the No Thanks button....................................skipped
+And Product should add into the cart........................................skipped
+And User clicks on the Go to Cart button....................................skipped
+Then The user verifies product "Thermometer" is present in cart.............skipped
+And The user verifies cart is not empty.....................................skipped
+When User clicks on Proceed to Buy button...................................skipped
+Then User should navigate to the checkout page..............................skipped
+And User selects delivery address...........................................skipped
+Then User should be redirected to payment page..............................skipped
+And User selects the payment method.........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,55 @@
+06:24:40 INFO  Utilities.log - Launching Chrome browser
+06:24:40 INFO  Utilities.log - Navigating to Amazon home page
+06:24:42 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:24:43 INFO  Utilities.log - Clicking on Sign in link
+06:24:43 INFO  Utilities.log - User is on login page
+06:24:43 INFO  Utilities.log - Entering phone number: 8630718216
+06:24:44 INFO  Utilities.log - Clicking on Continue button
+06:24:45 INFO  Utilities.log - Entering password
+06:24:48 INFO  Utilities.log - Clicking on Sign In button
+06:24:49 INFO  Utilities.log - User logged in successfully
+06:24:49 INFO  Utilities.log - Clicking on search field
+06:24:50 INFO  Utilities.log - Searching product: Thermometer
+06:24:55 INFO  Utilities.log - Clicking search button
+06:24:55 INFO  Utilities.log - Verifying search results for: Thermometer
+06:24:56 INFO  Utilities.log - ✅ Total products found: 60
+06:24:57 INFO  Utilities.log - Selecting product: Thermometer
+06:25:02 INFO  Utilities.log - Navigated to product details page
+06:25:03 INFO  Utilities.log - Clicking Add to Cart button
+06:25:04 INFO  Utilities.log - Clicking on NoThanks button
+06:25:04 INFO  Utilities.log - Product add into the cart
+06:25:08 INFO  Utilities.log - Clicking on Go To Cart button
+06:25:08 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+06:25:08 INFO  Utilities.log - 🛒 Cart Count: 5
+06:25:13 INFO  Utilities.log - Clicking Process to Buy button
+06:25:14 INFO  Utilities.log - User navigate to the Checkout page.
+06:25:14 INFO  Utilities.log - ✅ Clicked Change Address
+06:25:17 INFO  Utilities.log - ✅ Address selected successfully
+06:25:17 INFO  Utilities.log - ✅ Delivery button pressed
+06:25:17 INFO  Utilities.log - Payment page displayed
+06:25:37 ERROR Utilities.log - ℹ️ No popup present
+06:25:37 INFO  Utilities.log - Selecting Payment Method...
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: 
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: 
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: 
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: net banking
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: 
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: emi
+06:25:38 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+06:25:39 INFO  Utilities.log - ✅ Scan & Pay Selected
+06:25:39 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+06:25:41 INFO  Utilities.log - ✅ Clicked on amazon logo
+06:25:50 INFO  Utilities.log - Clicking signout button
+06:25:53 INFO  Utilities.log - ✔ Clicked on Home logo
+06:25:53 INFO  Utilities.log - Scenario Status: PASSED
+06:25:56 INFO  Utilities.log - Launching Chrome browser
+06:25:56 INFO  Utilities.log - Navigating to Amazon home page
+06:25:59 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:26:00 INFO  Utilities.log - Clicking on Sign in link
+06:26:00 INFO  Utilities.log - User is on login page
+06:26:00 INFO  Utilities.log - Entering phone number: 9876543210
+06:26:02 INFO  Utilities.log - Clicking on Continue button
+06:26:32 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+06:26:33 INFO  Utilities.log - Scenario Status: FAILED

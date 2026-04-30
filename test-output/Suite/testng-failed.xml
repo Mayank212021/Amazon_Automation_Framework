@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Main Execution(failed)">
+    <classes>
+      <class name="testRunner.testRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="rerunFailedScenarios"/>
+        </methods>
+      </class> <!-- testRunner.testRunner -->
+    </classes>
+  </test> <!-- Main Execution(failed) -->
+  <test thread-count="2" parallel="tests" name="Rerun Failed(failed)">
+    <classes>
+      <class name="testRunner.failedTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testRunner.failedTestRunner -->
+    </classes>
+  </test> <!-- Rerun Failed(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,102 @@
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: chrome
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: edge
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: chrome
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: edge
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: firefox
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: firefox
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [firefox]
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [chrome]
+05:57:49 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [firefox]
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [edge]
+05:57:49 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [chrome]
+05:57:49 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [edge]
+05:57:55 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+05:57:55 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+05:57:55 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+05:57:55 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+05:57:55 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+05:57:55 INFO  Utilities.log - Browser launched successfully
+05:57:55 INFO  Utilities.log - Navigating to Amazon home page
+05:57:56 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+05:57:56 INFO  Utilities.log - Browser launched successfully
+05:57:56 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+05:57:56 INFO  Utilities.log - Navigating to Amazon home page
+05:57:56 INFO  Utilities.log - Browser launched successfully
+05:57:56 INFO  Utilities.log - Navigating to Amazon home page
+05:57:56 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+05:57:56 INFO  Utilities.log - Browser launched successfully
+05:57:56 INFO  Utilities.log - Navigating to Amazon home page
+05:58:02 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+05:58:02 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:02 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:02 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:03 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:04 INFO  Utilities.log - Clicking on Sign in link
+05:58:04 INFO  Utilities.log - Clicking on Sign in link
+05:58:05 INFO  Utilities.log - Clicking on Sign in link
+05:58:05 INFO  Utilities.log - Clicking on Sign in link
+05:58:05 INFO  Utilities.log - Entering phone number: 7520720735
+05:58:05 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+05:58:05 INFO  Utilities.log - Browser launched successfully
+05:58:05 INFO  Utilities.log - Navigating to Amazon home page
+05:58:05 INFO  Utilities.log - Entering phone number: 8630718216
+05:58:05 INFO  Utilities.log - Entering phone number: 7520720735
+05:58:05 INFO  Utilities.log - Entering phone number: 8630718216
+05:58:06 INFO  Utilities.log - Clicking on Continue button
+05:58:06 INFO  Utilities.log - Clicking on Continue button
+05:58:07 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:07 INFO  Utilities.log - Clicking on Continue button
+05:58:07 INFO  Utilities.log - Clicking on Continue button
+05:58:07 INFO  Utilities.log - Entering password
+05:58:07 INFO  Utilities.log - Entering password
+05:58:09 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+05:58:10 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+05:58:10 INFO  Utilities.log - Browser launched successfully
+05:58:10 INFO  Utilities.log - Navigating to Amazon home page
+05:58:13 INFO  Utilities.log - Clicking on Hello, Sign in option
+05:58:13 INFO  Utilities.log - Clicking on Sign In button
+05:58:13 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:13 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario Status: UNDEFINED
+05:58:13 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+05:58:13 INFO  Utilities.log - Clicking on Sign In button
+05:58:13 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:13 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario Status: UNDEFINED
+05:58:13 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+05:58:13 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+05:58:14 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+05:58:17 INFO  Utilities.log - Clicking on Sign in link
+05:58:23 INFO  Utilities.log - Clicking on Sign in link
+05:58:27 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+05:58:27 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:27 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+05:58:27 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+05:58:27 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+05:58:28 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+05:58:33 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+05:58:33 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:33 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+05:58:33 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ❌ Scenario failed - final screenshot captured
+05:58:33 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+05:58:34 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+05:58:37 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+05:58:37 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+05:58:37 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:37 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+05:58:37 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+05:58:37 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+05:58:37 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+05:58:37 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+05:58:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+05:58:37 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+05:58:37 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+05:58:37 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+05:58:37 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+05:58:38 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully

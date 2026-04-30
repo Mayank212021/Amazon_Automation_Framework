@@ -1,0 +1,147 @@
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: edge
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: chrome
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> 🚀 Starting execution on browser: chrome
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> 🚀 Starting execution on browser: edge
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: edge
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: chrome
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario: Valid user adds product to cart [edge]
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario: Invalid user should not login [chrome]
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> Scenario: Valid user enters wrong password [edge]
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> Scenario: Valid user enters wrong password [chrome]
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+10:58:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> Scenario: Invalid user should not login [edge]
+10:58:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario: Valid user adds product to cart [chrome]
+10:58:11 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+10:58:11 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+10:58:11 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> ✅ Browser launched successfully
+10:58:12 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+10:58:12 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> ✅ Browser launched successfully
+10:58:12 INFO  Utilities.log - Browser launched successfully
+10:58:12 INFO  Utilities.log - Browser launched successfully
+10:58:12 INFO  Utilities.log - Navigating to Amazon home page
+10:58:12 INFO  Utilities.log - Browser launched successfully
+10:58:12 INFO  Utilities.log - Navigating to Amazon home page
+10:58:12 INFO  Utilities.log - Navigating to Amazon home page
+10:58:13 INFO  Utilities.log - Browser launched successfully
+10:58:13 INFO  Utilities.log - Navigating to Amazon home page
+10:58:13 INFO  Utilities.log - Browser launched successfully
+10:58:13 INFO  Utilities.log - Navigating to Amazon home page
+10:58:13 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+10:58:14 INFO  Utilities.log - Browser launched successfully
+10:58:14 INFO  Utilities.log - Navigating to Amazon home page
+10:58:17 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:18 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:18 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:19 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:19 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:20 INFO  Utilities.log - Clicking on Hello, Sign in option
+10:58:21 INFO  Utilities.log - Clicking on Sign in link
+10:58:21 INFO  Utilities.log - Clicking on Sign in link
+10:58:22 INFO  Utilities.log - Clicking on Sign in link
+10:58:22 INFO  Utilities.log - Clicking on Sign in link
+10:58:22 INFO  Utilities.log - Entering phone number: 7520720735
+10:58:22 INFO  Utilities.log - Clicking on Sign in link
+10:58:22 INFO  Utilities.log - Entering phone number: 8630718216
+10:58:22 INFO  Utilities.log - Entering phone number: 8630718216
+10:58:22 INFO  Utilities.log - Clicking on Sign in link
+10:58:22 INFO  Utilities.log - Entering phone number: 8630718216
+10:58:22 INFO  Utilities.log - Entering phone number: 7520720735
+10:58:22 INFO  Utilities.log - Entering phone number: 8630718216
+10:58:22 INFO  Utilities.log - Clicking on Continue button
+10:58:23 INFO  Utilities.log - Clicking on Continue button
+10:58:23 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+10:58:23 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> Scenario Status: PASSED
+10:58:23 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+10:58:23 INFO  Utilities.log - Clicking on Continue button
+10:58:23 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+10:58:23 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario Status: PASSED
+10:58:23 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+10:58:24 INFO  Utilities.log - Clicking on Continue button
+10:58:24 INFO  Utilities.log - Clicking on Continue button
+10:58:24 INFO  Utilities.log - Clicking on Continue button
+10:58:24 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+10:58:24 INFO  Utilities.log - Entering password
+10:58:24 INFO  Utilities.log - Entering password
+10:58:24 INFO  Utilities.log - Entering password
+10:58:24 INFO  Utilities.log - Entering password
+10:58:24 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+10:58:26 INFO  Utilities.log - Clicking on Sign In button
+10:58:26 INFO  Utilities.log - Clicking on Sign In button
+10:58:26 INFO  Utilities.log - User is not logged in because of wrong password
+10:58:26 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+10:58:26 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> Scenario Status: PASSED
+10:58:26 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user enters wrong password [edge]] [THREAD: TestNG-PoolService-3] -> 🛑 Closing browser
+10:58:26 INFO  Utilities.log - User is not logged in because of wrong password
+10:58:26 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+10:58:26 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> Scenario Status: PASSED
+10:58:26 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user enters wrong password [chrome]] [THREAD: TestNG-PoolService-3] -> 🛑 Closing browser
+10:58:27 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ✅ Browser closed successfully
+10:58:27 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ✅ Browser closed successfully
+10:58:29 INFO  Utilities.log - Clicking on Sign In button
+10:58:29 INFO  Utilities.log - User is logged in successfully
+10:58:30 INFO  Utilities.log - Clicking on search field
+10:58:30 INFO  Utilities.log - Searching product: Thermometer
+10:58:31 INFO  Utilities.log - Clicking on Sign In button
+10:58:31 INFO  Utilities.log - User is logged in successfully
+10:58:31 INFO  Utilities.log - Clicking on search field
+10:58:31 INFO  Utilities.log - Searching product: Thermometer
+10:58:34 INFO  Utilities.log - Clicking search button
+10:58:34 INFO  Utilities.log - Verifying search results for: Thermometer
+10:58:35 INFO  Utilities.log - ✅ Total products found: 60
+10:58:35 INFO  Utilities.log - Clicking search button
+10:58:35 INFO  Utilities.log - Verifying search results for: Thermometer
+10:58:36 INFO  Utilities.log - ✅ Total products found: 60
+10:58:36 INFO  Utilities.log - Selecting product: Thermometer
+10:58:37 INFO  Utilities.log - Selecting product: Thermometer
+10:58:41 INFO  Utilities.log - Navigated to product details page
+10:58:41 INFO  Utilities.log - Navigated to product details page
+10:58:42 INFO  Utilities.log - Clicking Add to Cart button
+10:58:42 INFO  Utilities.log - Clicking Add to Cart button
+10:58:42 INFO  Utilities.log - Clicking on NoThanks button
+10:58:43 INFO  Utilities.log - Product add into the cart
+10:58:43 INFO  Utilities.log - Clicking on NoThanks button
+10:58:43 INFO  Utilities.log - Product add into the cart
+10:58:47 INFO  Utilities.log - Clicking on Go To Cart button
+10:58:48 INFO  Utilities.log - Clicking on Go To Cart button
+10:58:48 INFO  Utilities.log - ✅ Product found in cart: beurer ft 65 multi functional thermometer 6-in-1 function | 10 memory space | large display | smart indicator| modern design
+10:58:48 INFO  Utilities.log - 🛒 Cart Count: 32
+10:58:48 INFO  Utilities.log - ✅ Product found in cart: beurer ft 65 multi functional thermometer 6-in-1 function | 10 memory space | large display | smart indicator| modern design
+10:58:48 INFO  Utilities.log - 🛒 Cart Count: 32
+10:58:53 INFO  Utilities.log - Clicking Process to Buy button
+10:58:53 INFO  Utilities.log - User navigate to the Checkout page.
+10:58:53 INFO  Utilities.log - Clicking Process to Buy button
+10:58:53 INFO  Utilities.log - ✅ Clicked Change Address
+10:58:53 INFO  Utilities.log - User navigate to the Checkout page.
+10:58:54 INFO  Utilities.log - ✅ Clicked Change Address
+10:58:57 INFO  Utilities.log - ✅ Address selected successfully
+10:58:57 INFO  Utilities.log - ✅ Delivery button pressed
+10:58:57 INFO  Utilities.log - Payment page displayed
+10:58:57 INFO  Utilities.log - ✅ Address selected successfully
+10:58:57 INFO  Utilities.log - ✅ Delivery button pressed
+10:58:57 INFO  Utilities.log - Payment page displayed
+10:59:17 ERROR Utilities.log - ℹ️ No popup present
+10:59:17 INFO  Utilities.log - Selecting Payment Method...
+10:59:17 INFO  Utilities.log - 👉 Payment Option Found: tuesday, 5 may
+free prime delivery
+10:59:17 INFO  Utilities.log - ✅ COD Selected
+10:59:17 ERROR Utilities.log - ℹ️ No popup present
+10:59:17 INFO  Utilities.log - Selecting Payment Method...
+10:59:27 INFO  Utilities.log - ⚠️ Use Payment button not found
+10:59:30 INFO  Utilities.log - ✅ Clicked on amazon logo
+10:59:41 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+10:59:41 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+10:59:41 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+10:59:41 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ❌ Scenario failed - final screenshot captured
+10:59:42 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Valid user adds product to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+10:59:43 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+10:59:47 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+10:59:48 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+10:59:48 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+10:59:48 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> ❌ Scenario failed - final screenshot captured
+10:59:48 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Valid user adds product to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+10:59:48 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully

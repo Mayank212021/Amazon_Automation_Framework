@@ -1,0 +1,12 @@
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> Scenario Status: FAILED
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> Scenario Status: FAILED
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+05:51:03 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED

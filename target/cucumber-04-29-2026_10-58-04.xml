@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="103.07" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-04-29T17:28:05.916409300Z">
+<testcase classname="End to End Amazon Shopping Flow" name="Valid user adds product to cart - #1.1" time="102.692">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of all 0 elements, but no elements were found
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.86, fedcm:accounts: true, goog:processID: 43476, ms:edgeOptions: {debuggerAddress: localhost:63630}, msedge: {msedgedriverVersion: 147.0.3912.86 (3a0d90fcf938..., userDataDir: C:\Users\mayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63630/devtoo..., se:cdpVersion: 147.0.3912.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb688e966ea1f087f7a236e3df52cd8d">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all 0 elements, but no elements were found
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.86, fedcm:accounts: true, goog:processID: 43476, ms:edgeOptions: {debuggerAddress: localhost:63630}, msedge: {msedgedriverVersion: 147.0.3912.86 (3a0d90fcf938..., userDataDir: C:\Users\mayan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63630/devtoo..., se:cdpVersion: 147.0.3912.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb688e966ea1f087f7a236e3df52cd8d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at pageObject.checkoutPage.selectPaymentMethod(checkoutPage.java:137)
+	at stepDefinitions.checkoutStepDefinition.select_payment_method(checkoutStepDefinition.java:46)
+	at ✽.User selects the payment method(file:///C:/Users/mayan/eclipse-workspace/AutomationAmazonWeb/src/test/java/features/AmazonPurchase.feature:39)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Kaushik21#" into password field...............passed
+And Click on the Sign In button.............................................passed
+Then user should get "success"..............................................passed
+When User clicks in the search field box....................................passed
+And User enters the product name "Thermometer"..............................passed
+And Clicks on the search icon button........................................passed
+Then All "Thermometer" results should be shown on the page..................passed
+And The user selects a "Thermometer" product................................passed
+Then The user navigates to the product details page.........................passed
+When User clicks on the Add to cart button..................................passed
+Then User clicks on the No Thanks button....................................passed
+And Product should add into the cart........................................passed
+And User clicks on the Go to Cart button....................................passed
+Then The user verifies product "Thermometer" is present in cart.............passed
+And The user verifies cart is not empty.....................................passed
+When User clicks on Proceed to Buy button...................................passed
+Then User should navigate to the checkout page..............................passed
+And User selects delivery address...........................................passed
+Then User should be redirected to payment page..............................passed
+And User selects the payment method.........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="Invalid user should not login - #1.1" time="18.13">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "7520720735" into the fieldbox.....passed
+And click on the Continue button............................................passed
+Then user should get "error"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="Valid user enters wrong password - #1.1" time="21.152">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Test@123" into password field.................passed
+And Click on the Sign In button.............................................passed
+Then user should get "wrong_password".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+..............passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "7520720735" into the fieldbox.....passed
+And click on the Continue button............................................passed
+Then user should get "error"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End Amazon Shopping Flow" name="Valid user enters wrong password - #1.1" time="21.18">
+<system-out><![CDATA[
+Given User is on browser....................................................passed
+When I navigate to Home page of the Amazon web application..................passed
+And Go to the Hello,Sign in option..........................................passed
+And Click on the Sign in link...............................................passed
+Given User enters the valid phone number "8630718216" into the fieldbox.....passed
+And click on the Continue button............................................passed
+And Enter the valid password "Test@123" into password field.................passed
+And Click on the Sign In button.............................................passed
+Then user should get "wrong_password".......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,36 @@
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 ERROR Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ⚠️ Browser was null, defaulting to chrome
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-3] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: null
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> Scenario: Invalid user should not login [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> Scenario: Invalid user should not login [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> Scenario: Valid user enters wrong password [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> Scenario: Valid user adds product to cart [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> Scenario: Valid user enters wrong password [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> Scenario: Valid user adds product to cart [null]
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> Scenario Status: FAILED
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Invalid user should not login [null]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user enters wrong password [null]] [THREAD: TestNG-PoolService-3] -> Scenario Status: FAILED
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+06:52:37 INFO  Utilities.log - [BROWSER: null] [SCENARIO: Valid user adds product to cart [null]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED

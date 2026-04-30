@@ -1,0 +1,78 @@
+01:05:25 INFO  Utilities.log - Launching Chrome browser
+01:05:25 INFO  Utilities.log - Launching Chrome browser
+01:05:25 INFO  Utilities.log - Navigating to Amazon home page
+01:05:25 INFO  Utilities.log - Navigating to Amazon home page
+01:05:27 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:05:27 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:05:28 INFO  Utilities.log - Clicking on Sign in link
+01:05:28 INFO  Utilities.log - User is on login page
+01:05:28 INFO  Utilities.log - Entering phone number: 9876543210
+01:05:28 INFO  Utilities.log - Clicking on Continue button
+01:05:28 INFO  Utilities.log - Clicking on Sign in link
+01:05:28 INFO  Utilities.log - User is on login page
+01:05:28 INFO  Utilities.log - Entering phone number: 8630718216
+01:05:28 INFO  Utilities.log - Clicking on Continue button
+01:05:30 INFO  Utilities.log - Entering password
+01:05:30 INFO  Utilities.log - Clicking on Sign In button
+01:05:33 INFO  Utilities.log - User logged in successfully
+01:05:33 INFO  Utilities.log - Clicking on search field
+01:05:34 INFO  Utilities.log - Searching product: Thermometer
+01:05:37 INFO  Utilities.log - Clicking search button
+01:05:37 INFO  Utilities.log - Verifying search results for: Thermometer
+01:05:38 INFO  Utilities.log - ✅ Total products found: 60
+01:05:38 INFO  Utilities.log - Selecting product: Thermometer
+01:05:42 INFO  Utilities.log - Navigated to product details page
+01:05:43 INFO  Utilities.log - Clicking Add to Cart button
+01:05:43 INFO  Utilities.log - Clicking on NoThanks button
+01:05:44 INFO  Utilities.log - Product add into the cart
+01:05:47 INFO  Utilities.log - Clicking on Go To Cart button
+01:05:48 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+01:05:48 INFO  Utilities.log - 🛒 Cart Count: 2
+01:05:52 INFO  Utilities.log - Clicking Process to Buy button
+01:05:52 INFO  Utilities.log - User navigate to the Checkout page.
+01:05:52 INFO  Utilities.log - ✅ Clicked Change Address
+01:05:55 INFO  Utilities.log - ✅ Address selected successfully
+01:05:55 INFO  Utilities.log - ✅ Delivery button pressed
+01:05:55 INFO  Utilities.log - Payment page displayed
+01:05:59 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:05:59 INFO  Utilities.log - Scenario Status: FAILED
+01:06:15 ERROR Utilities.log - ℹ️ No popup present
+01:06:15 INFO  Utilities.log - Selecting Payment Method...
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: 
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: 
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: 
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: net banking
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: 
+01:06:15 INFO  Utilities.log - 👉 Payment Option Found: 
+01:06:16 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+01:06:16 INFO  Utilities.log - ✅ Scan & Pay Selected
+01:06:16 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+01:06:18 INFO  Utilities.log - ✅ Clicked on amazon logo
+01:06:21 INFO  Utilities.log - Clicking signout button
+01:06:23 INFO  Utilities.log - ✔ Clicked on Home logo
+01:06:23 INFO  Utilities.log - Scenario Status: PASSED
+01:06:24 INFO  Utilities.log - 🔥 Rerunning Failed Scenarios...
+01:06:24 INFO  Utilities.log - 👉 Rerun Attempt: 1
+01:06:25 INFO  Utilities.log - Launching Chrome browser
+01:06:25 INFO  Utilities.log - Navigating to Amazon home page
+01:06:27 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:06:28 INFO  Utilities.log - Clicking on Sign in link
+01:06:28 INFO  Utilities.log - User is on login page
+01:06:29 INFO  Utilities.log - Entering phone number: 9876543210
+01:06:29 INFO  Utilities.log - Clicking on Continue button
+01:06:59 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:06:59 INFO  Utilities.log - Scenario Status: FAILED
+01:07:00 INFO  Utilities.log - 👉 Rerun Attempt: 2
+01:07:01 INFO  Utilities.log - Launching Chrome browser
+01:07:01 INFO  Utilities.log - Navigating to Amazon home page
+01:07:03 INFO  Utilities.log - Clicking on Hello, Sign in option
+01:07:04 INFO  Utilities.log - Clicking on Sign in link
+01:07:04 INFO  Utilities.log - User is on login page
+01:07:04 INFO  Utilities.log - Entering phone number: 9876543210
+01:07:04 INFO  Utilities.log - Clicking on Continue button
+01:07:35 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+01:07:35 INFO  Utilities.log - Scenario Status: FAILED

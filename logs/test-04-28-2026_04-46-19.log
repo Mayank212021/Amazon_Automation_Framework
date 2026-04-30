@@ -1,0 +1,176 @@
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: chrome
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: edge
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: chrome
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: edge
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: firefox
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🚀 Starting execution on browser: firefox
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🚀 SCENARIO STARTED ==========
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [edge]
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [chrome]
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [firefox]
+04:46:19 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [firefox]
+04:46:19 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario: User adds multiple products to cart [edge]
+04:46:19 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario: User adds multiple products to cart [chrome]
+04:46:24 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+04:46:24 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+04:46:24 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+04:46:24 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+04:46:24 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+04:46:24 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+04:46:24 INFO  Utilities.log - Browser launched successfully
+04:46:24 INFO  Utilities.log - Browser launched successfully
+04:46:24 INFO  Utilities.log - Navigating to Amazon home page
+04:46:24 INFO  Utilities.log - Navigating to Amazon home page
+04:46:25 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+04:46:25 INFO  Utilities.log - Browser launched successfully
+04:46:25 INFO  Utilities.log - Navigating to Amazon home page
+04:46:25 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+04:46:25 INFO  Utilities.log - Browser launched successfully
+04:46:25 INFO  Utilities.log - Navigating to Amazon home page
+04:46:31 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:31 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:32 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:32 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:32 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+04:46:33 INFO  Utilities.log - Clicking on Sign in link
+04:46:33 INFO  Utilities.log - User is on login page
+04:46:33 INFO  Utilities.log - Clicking on Sign in link
+04:46:33 INFO  Utilities.log - User is on login page
+04:46:34 INFO  Utilities.log - Clicking on Sign in link
+04:46:34 INFO  Utilities.log - User is on login page
+04:46:34 INFO  Utilities.log - Entering phone number: 8630718216
+04:46:34 INFO  Utilities.log - Clicking on Sign in link
+04:46:34 INFO  Utilities.log - User is on login page
+04:46:34 INFO  Utilities.log - Entering phone number: 8630718216
+04:46:34 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🌐 Navigated to Amazon Home Page
+04:46:34 INFO  Utilities.log - Browser launched successfully
+04:46:34 INFO  Utilities.log - Navigating to Amazon home page
+04:46:34 INFO  Utilities.log - Entering phone number: 9876543210
+04:46:34 INFO  Utilities.log - Entering phone number: 9876543210
+04:46:35 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:36 INFO  Utilities.log - Clicking on Continue button
+04:46:36 INFO  Utilities.log - Clicking on Continue button
+04:46:36 INFO  Utilities.log - Clicking on Continue button
+04:46:36 INFO  Utilities.log - Clicking on Continue button
+04:46:36 INFO  Utilities.log - Entering password
+04:46:36 INFO  Utilities.log - Entering password
+04:46:37 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ✅ Browser launched successfully
+04:46:38 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🌐 Navigated to Amazon Home Page
+04:46:38 INFO  Utilities.log - Browser launched successfully
+04:46:38 INFO  Utilities.log - Navigating to Amazon home page
+04:46:40 INFO  Utilities.log - Clicking on Hello, Sign in option
+04:46:42 INFO  Utilities.log - Clicking on Sign In button
+04:46:42 INFO  Utilities.log - Clicking on Sign In button
+04:46:43 INFO  Utilities.log - User logged in successfully
+04:46:44 INFO  Utilities.log - User logged in successfully
+04:46:45 INFO  Utilities.log - Clicking on search field
+04:46:45 INFO  Utilities.log - Searching product: Thermometer
+04:46:45 INFO  Utilities.log - Clicking on search field
+04:46:45 INFO  Utilities.log - Searching product: Thermometer
+04:46:45 INFO  Utilities.log - Clicking on Sign in link
+04:46:45 INFO  Utilities.log - User is on login page
+04:46:50 INFO  Utilities.log - Clicking search button
+04:46:50 INFO  Utilities.log - Verifying search results for: Thermometer
+04:46:50 INFO  Utilities.log - Clicking search button
+04:46:50 INFO  Utilities.log - Verifying search results for: Thermometer
+04:46:50 INFO  Utilities.log - Clicking on Sign in link
+04:46:50 INFO  Utilities.log - User is on login page
+04:46:51 INFO  Utilities.log - ✅ Total products found: 60
+04:46:51 INFO  Utilities.log - ✅ Total products found: 60
+04:46:52 INFO  Utilities.log - Selecting product: Thermometer
+04:46:52 INFO  Utilities.log - Selecting product: Thermometer
+04:46:55 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+04:46:56 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+04:46:56 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+04:46:56 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> ❌ Scenario failed - final screenshot captured
+04:46:56 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+04:46:58 INFO  Utilities.log - Navigated to product details page
+04:46:58 INFO  Utilities.log - Navigated to product details page
+04:46:58 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+04:46:59 INFO  Utilities.log - Clicking Add to Cart button
+04:46:59 INFO  Utilities.log - Clicking Add to Cart button
+04:46:59 INFO  Utilities.log - Clicking on NoThanks button
+04:47:00 INFO  Utilities.log - Product add into the cart
+04:47:00 INFO  Utilities.log - Clicking on NoThanks button
+04:47:00 INFO  Utilities.log - Product add into the cart
+04:47:00 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+04:47:01 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+04:47:01 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+04:47:01 ERROR Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+04:47:01 INFO  Utilities.log - [BROWSER: firefox] [SCENARIO: User adds multiple products to cart [firefox]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+04:47:02 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+04:47:04 INFO  Utilities.log - Clicking on Go To Cart button
+04:47:05 INFO  Utilities.log - Clicking on Go To Cart button
+04:47:05 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+04:47:05 INFO  Utilities.log - 🛒 Cart Count: 10
+04:47:05 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+04:47:05 INFO  Utilities.log - 🛒 Cart Count: 10
+04:47:07 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+04:47:07 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+04:47:07 ERROR Utilities.log - User not registered: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+04:47:07 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ❌ Step failed - capturing screenshot
+04:47:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+04:47:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+04:47:07 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+04:47:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ========== 🏁 SCENARIO ENDED ==========
+04:47:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> Scenario Status: FAILED
+04:47:07 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> ❌ Scenario failed - final screenshot captured
+04:47:07 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+04:47:07 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-2] -> 🛑 Closing browser
+04:47:07 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+04:47:07 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-2] -> ✅ Browser closed successfully
+04:47:09 INFO  Utilities.log - Clicking Process to Buy button
+04:47:09 INFO  Utilities.log - User navigate to the Checkout page.
+04:47:10 INFO  Utilities.log - ✅ Clicked Change Address
+04:47:10 INFO  Utilities.log - Clicking Process to Buy button
+04:47:10 INFO  Utilities.log - User navigate to the Checkout page.
+04:47:10 INFO  Utilities.log - ✅ Clicked Change Address
+04:47:13 INFO  Utilities.log - ✅ Address selected successfully
+04:47:13 INFO  Utilities.log - ✅ Delivery button pressed
+04:47:13 INFO  Utilities.log - Payment page displayed
+04:47:13 INFO  Utilities.log - ✅ Address selected successfully
+04:47:13 INFO  Utilities.log - ✅ Delivery button pressed
+04:47:13 INFO  Utilities.log - Payment page displayed
+04:47:33 ERROR Utilities.log - ℹ️ No popup present
+04:47:33 INFO  Utilities.log - Selecting Payment Method...
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: net banking
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: emi
+04:47:33 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+04:47:33 INFO  Utilities.log - ✅ Scan & Pay Selected
+04:47:33 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+04:47:33 ERROR Utilities.log - ℹ️ No popup present
+04:47:33 INFO  Utilities.log - Selecting Payment Method...
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: net banking
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: 
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: emi
+04:47:34 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+04:47:34 INFO  Utilities.log - ✅ Scan & Pay Selected
+04:47:34 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+04:47:36 INFO  Utilities.log - ✅ Clicked on amazon logo
+04:47:36 INFO  Utilities.log - ✅ Clicked on amazon logo
+04:47:41 INFO  Utilities.log - Clicking signout button
+04:47:42 INFO  Utilities.log - Clicking signout button
+04:47:43 INFO  Utilities.log - ✔ Clicked on Home logo
+04:47:43 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+04:47:43 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> Scenario Status: PASSED
+04:47:43 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: User adds multiple products to cart [edge]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+04:47:44 INFO  Utilities.log - ✔ Clicked on Home logo
+04:47:44 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🏁 SCENARIO ENDED ==========
+04:47:44 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario Status: PASSED
+04:47:44 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: User adds multiple products to cart [chrome]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+04:47:44 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+04:47:44 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully

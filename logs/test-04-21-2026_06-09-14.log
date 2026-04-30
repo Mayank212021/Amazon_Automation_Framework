@@ -1,0 +1,36 @@
+06:09:14 INFO  Utilities.log - Launching Chrome browser
+06:09:14 INFO  Utilities.log - Navigating to Amazon home page
+06:09:16 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:09:17 INFO  Utilities.log - Clicking on Sign in link
+06:09:17 INFO  Utilities.log - User is on login page
+06:09:17 INFO  Utilities.log - Entering phone number: 8630718216
+06:09:18 INFO  Utilities.log - Clicking on Continue button
+06:09:18 INFO  Utilities.log - Entering password
+06:09:22 INFO  Utilities.log - Clicking on Sign In button
+06:09:22 INFO  Utilities.log - User logged in successfully
+06:09:23 INFO  Utilities.log - Clicking on search field
+06:09:23 INFO  Utilities.log - Searching product: Thermometer
+06:09:28 INFO  Utilities.log - Clicking search button
+06:09:28 INFO  Utilities.log - Verifying search results for: Thermometer
+06:09:29 INFO  Utilities.log - ✅ Total products found: 60
+06:09:30 INFO  Utilities.log - Selecting product: Thermometer
+06:09:35 INFO  Utilities.log - Navigated to product details page
+06:09:36 INFO  Utilities.log - Clicking Add to Cart button
+06:09:37 INFO  Utilities.log - Clicking on NoThanks button
+06:09:37 INFO  Utilities.log - Product add into the cart
+06:09:41 INFO  Utilities.log - Clicking on Go To Cart button
+06:09:42 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+06:09:42 INFO  Utilities.log - 🛒 Cart Count: 4
+06:09:47 INFO  Utilities.log - Clicking Process to Buy button
+06:09:47 INFO  Utilities.log - User navigate to the Checkout page.
+06:09:47 INFO  Utilities.log - Scenario Status: UNDEFINED
+06:09:50 INFO  Utilities.log - Launching Chrome browser
+06:09:50 INFO  Utilities.log - Navigating to Amazon home page
+06:09:53 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:09:54 INFO  Utilities.log - Clicking on Sign in link
+06:09:54 INFO  Utilities.log - User is on login page
+06:09:55 INFO  Utilities.log - Entering phone number: 9876543210
+06:09:56 INFO  Utilities.log - Clicking on Continue button
+06:10:27 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+06:10:28 INFO  Utilities.log - Scenario Status: FAILED

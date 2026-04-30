@@ -1,0 +1,68 @@
+06:22:53 INFO  Utilities.log - Launching Chrome browser
+06:22:53 INFO  Utilities.log - Launching Chrome browser
+06:22:53 INFO  Utilities.log - Navigating to Amazon home page
+06:22:53 INFO  Utilities.log - Navigating to Amazon home page
+06:22:55 INFO  Utilities.log - Launching Chrome browser
+06:22:55 INFO  Utilities.log - Navigating to Amazon home page
+06:22:55 INFO  Utilities.log - Launching Chrome browser
+06:22:55 INFO  Utilities.log - Navigating to Amazon home page
+06:22:56 INFO  Utilities.log - Launching Chrome browser
+06:22:56 INFO  Utilities.log - Navigating to Amazon home page
+06:22:58 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:22:59 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:22:59 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:22:59 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:23:00 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:23:03 INFO  Utilities.log - Clicking on Sign in link
+06:23:03 INFO  Utilities.log - User is on login page
+06:23:03 INFO  Utilities.log - Entering phone number: 8630718216
+06:23:05 INFO  Utilities.log - Clicking on Continue button
+06:23:05 INFO  Utilities.log - Entering password
+06:23:08 INFO  Utilities.log - Clicking on Sign In button
+06:23:08 INFO  Utilities.log - User logged in successfully
+06:23:08 INFO  Utilities.log - Clicking on Sign in link
+06:23:08 INFO  Utilities.log - User is on login page
+06:23:08 INFO  Utilities.log - Clicking on search field
+06:23:08 INFO  Utilities.log - Searching product: Thermometer
+06:23:09 INFO  Utilities.log - Clicking on Sign in link
+06:23:09 INFO  Utilities.log - User is on login page
+06:23:09 INFO  Utilities.log - Clicking on Sign in link
+06:23:09 INFO  Utilities.log - User is on login page
+06:23:10 INFO  Utilities.log - Clicking search button
+06:23:10 INFO  Utilities.log - Verifying search results for: Thermometer
+06:23:11 INFO  Utilities.log - ✅ Total products found: 60
+06:23:11 INFO  Utilities.log - Clicking on Sign in link
+06:23:11 INFO  Utilities.log - User is on login page
+06:23:13 INFO  Utilities.log - Selecting product: Thermometer
+06:23:15 INFO  Utilities.log - Navigated to product details page
+06:23:17 INFO  Utilities.log - Clicking Add to Cart button
+06:23:19 INFO  Utilities.log - Scenario Status: FAILED
+06:23:19 INFO  Utilities.log - Scenario Status: FAILED
+06:23:20 INFO  Utilities.log - Scenario Status: FAILED
+06:23:21 INFO  Utilities.log - Scenario Status: FAILED
+06:23:27 ERROR Utilities.log - ❌ No Thanks popup not displayed
+06:23:27 INFO  Utilities.log - Clicking on NoThanks button
+06:23:27 INFO  Utilities.log - Product add into the cart
+06:23:29 INFO  Utilities.log - Clicking on Go To Cart button
+06:23:29 INFO  Utilities.log - ✅ Product found in cart: aptechdeals htc-1 digital hygrometer thermometer humidity meter with clock lcd display
+06:23:29 INFO  Utilities.log - 🛒 Cart Count: 5
+06:23:34 INFO  Utilities.log - Clicking Process to Buy button
+06:23:34 INFO  Utilities.log - User navigate to the Checkout page.
+06:23:35 INFO  Utilities.log - ✅ Clicked Change Address
+06:23:38 INFO  Utilities.log - ✅ Address selected successfully
+06:23:38 INFO  Utilities.log - ✅ Delivery button pressed
+06:23:38 INFO  Utilities.log - Payment page displayed
+06:23:58 ERROR Utilities.log - ℹ️ No popup present
+06:23:58 INFO  Utilities.log - Selecting Payment Method...
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: mastercard ending in 5163
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: 
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: 
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: net banking
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: 
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: emi
+06:23:58 INFO  Utilities.log - 👉 Payment Option Found: cash on delivery/pay on delivery
+06:23:59 INFO  Utilities.log - ✅ Scan & Pay Selected
+06:23:59 INFO  Utilities.log - ✅ Clicked Use This Payment Method
+06:23:59 INFO  Utilities.log - ✅ Clicked on amazon logo
+06:24:02 INFO  Utilities.log - Scenario Status: FAILED
+06:24:05 INFO  Utilities.log - 🔥 Rerunning Failed Scenarios...

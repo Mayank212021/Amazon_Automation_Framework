@@ -1,0 +1,56 @@
+12:42:03 INFO  Utilities.log - Launching Chrome browser
+12:42:03 INFO  Utilities.log - Launching Chrome browser
+12:42:03 INFO  Utilities.log - Launching Chrome browser
+12:42:03 INFO  Utilities.log - Navigating to Amazon home page
+12:42:03 INFO  Utilities.log - Navigating to Amazon home page
+12:42:03 INFO  Utilities.log - Navigating to Amazon home page
+12:42:07 INFO  Utilities.log - Clicking on Hello, Sign in option
+12:42:07 INFO  Utilities.log - Clicking on Hello, Sign in option
+12:42:07 INFO  Utilities.log - Clicking on Hello, Sign in option
+12:42:08 INFO  Utilities.log - Clicking on Sign in link
+12:42:08 INFO  Utilities.log - User is on login page
+12:42:08 INFO  Utilities.log - Clicking on Sign in link
+12:42:08 INFO  Utilities.log - User is on login page
+12:42:08 INFO  Utilities.log - Clicking on Sign in link
+12:42:08 INFO  Utilities.log - User is on login page
+12:42:08 INFO  Utilities.log - Entering phone number: 9876543210
+12:42:08 INFO  Utilities.log - Entering phone number: 9876543210
+12:42:08 INFO  Utilities.log - Clicking on Continue button
+12:42:08 INFO  Utilities.log - Entering phone number: 8630718216
+12:42:10 INFO  Utilities.log - Clicking on Continue button
+12:42:10 INFO  Utilities.log - Entering password
+12:42:10 INFO  Utilities.log - Clicking on Continue button
+12:42:15 INFO  Utilities.log - Clicking on Sign In button
+12:42:15 INFO  Utilities.log - User logged in successfully
+12:42:15 INFO  Utilities.log - Clicking on search field
+12:42:16 INFO  Utilities.log - Searching product: Thermometer
+12:42:16 INFO  Utilities.log - Clicking search button
+12:42:16 INFO  Utilities.log - Verifying search results for: Thermometer
+12:42:22 INFO  Utilities.log - Scenario Status: FAILED
+12:42:39 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+12:42:40 INFO  Utilities.log - Scenario Status: FAILED
+12:42:41 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+12:42:42 INFO  Utilities.log - Scenario Status: FAILED
+12:42:42 INFO  Utilities.log - 🔥 Rerunning Failed Scenarios...
+12:42:44 INFO  Utilities.log - Launching Chrome browser
+12:42:44 INFO  Utilities.log - Navigating to Amazon home page
+12:42:47 INFO  Utilities.log - Clicking on Hello, Sign in option
+12:42:48 INFO  Utilities.log - Clicking on Sign in link
+12:42:48 INFO  Utilities.log - User is on login page
+12:42:48 INFO  Utilities.log - Entering phone number: 9876543210
+12:42:50 INFO  Utilities.log - Clicking on Continue button
+12:43:21 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+12:43:22 INFO  Utilities.log - Scenario Status: FAILED
+12:43:25 INFO  Utilities.log - Launching Chrome browser
+12:43:25 INFO  Utilities.log - Navigating to Amazon home page
+12:43:28 INFO  Utilities.log - Clicking on Hello, Sign in option
+12:43:29 INFO  Utilities.log - Clicking on Sign in link
+12:43:29 INFO  Utilities.log - User is on login page
+12:43:29 INFO  Utilities.log - Entering phone number: 9876543210
+12:43:31 INFO  Utilities.log - Clicking on Continue button
+12:44:01 ERROR Utilities.log - Failed to enter the password, because user is not registered, user first need to create an account Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: ap_password'
+(tried for 15 seconds with 500 milliseconds interval)
+12:44:03 INFO  Utilities.log - Scenario Status: FAILED
