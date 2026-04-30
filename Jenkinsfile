@@ -18,7 +18,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '**/test-output/*.html'
+            archiveArtifacts artifacts: 'target/ExtentReports/*.html'
         }
     }
 }
