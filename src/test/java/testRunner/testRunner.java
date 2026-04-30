@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
+import Utilities.ReportRenamer;
 import Utilities.log;
 import base.baseClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -59,10 +60,16 @@ public class testRunner extends AbstractTestNGCucumberTests {
                 "rerun:target/failed_scenario.txt," +
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:");
 
-        System.setProperty("extent.reporter.spark.out",
-                "target/ExtentReports/ExtentReport_" + time + ".html");
+    
+      
        
     }
+    
+    @AfterSuite
+    public void afterSuite() {
+        ReportRenamer.renameReport();
+    }
+    
 
     // ✅ Failed scenario rerun (Fixed)
     /*
