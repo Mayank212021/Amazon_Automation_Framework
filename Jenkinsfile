@@ -15,4 +15,10 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            archiveArtifacts artifacts: '**/test-output/*.html'
+        }
+    }
 }
