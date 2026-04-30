@@ -15,10 +15,9 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            archiveArtifacts artifacts: 'target/ExtentReports/*.html'
-        }
+post {
+    always {
+        archiveArtifacts artifacts: '**/*.html', allowEmptyArchive: true
     }
+}
 }
