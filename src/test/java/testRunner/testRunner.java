@@ -18,11 +18,15 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "src/test/java/features/AmazonPurchase.feature",
-    glue = "stepDefinitions",
-    tags = "@Regression",
-    monochrome = true
-)
+	    features = "src/test/java/features/AmazonPurchase.feature",
+	    glue = "stepDefinitions",
+	    tags = "@Regression",
+	    monochrome = true,
+	    plugin = {
+	        "pretty",
+	        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+	    }
+	)
 public class testRunner extends AbstractTestNGCucumberTests {
 	
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
@@ -60,11 +64,8 @@ public class testRunner extends AbstractTestNGCucumberTests {
                 "rerun:target/failed_scenario.txt," +
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:");
 
-        // 👉 IMPORTANT: Extent report path (simple रखो अभी)
         System.setProperty("extent.reporter.spark.out",
                 "target/ExtentReport_" + time + ".html");
-      
-       
     }
     
    
