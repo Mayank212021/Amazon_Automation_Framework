@@ -34,7 +34,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
 	
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
 
-	// git update
+	// git update browser
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String browserName) {
