@@ -39,16 +39,12 @@ pipeline {
                 allowMissing: true
             ])
 
-            emailext (
-                subject: "Automation Report - Build #${BUILD_NUMBER}",
-                body: """
-                Build Status: ${currentBuild.currentResult}
-
-                Check report:
-                ${BUILD_URL}
-                """,
-                to: "kaushikmayank961@gmail.com"
-            )
+        emailext (
+    subject: "Automation Report - Build #${BUILD_NUMBER}",
+    body: "Build Completed. Check Jenkins: ${BUILD_URL}",
+    to: "kaushikmayank961@gmail.com",
+    attachLog: true
+)
         }
     }
 }
