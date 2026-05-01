@@ -42,15 +42,15 @@ public class cartPage {
 
 	    WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(40));
 
-	    // scroll (Amazon cart lazy load fix)
+	    // scroll
 	    JavascriptExecutor js = (JavascriptExecutor) ldriver;
 	    js.executeScript("window.scrollBy(0,500)");
 
-	    // wait for elements to be present
-	    wait.until(ExpectedConditions.visibilityOfAllElements(cartProducts));
+	    // wait सिर्फ list आने तक (visibility नहीं)
+	    wait.until(driver -> cartProducts.size() > 0);
 
 	    for (WebElement product : cartProducts) {
-	        if (product.getText().contains(productName) && product.isDisplayed()) {
+	        if (product.isDisplayed() && product.getText().contains(productName)) {
 	            return true;
 	        }
 	    }
