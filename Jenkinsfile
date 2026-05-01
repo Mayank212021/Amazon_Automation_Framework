@@ -39,15 +39,16 @@ pipeline {
                 allowMissing: true
             ])
 
-       emailext (
-    subject: "Automation Report - Build #${BUILD_NUMBER}",
-    body: "Build Status: ${currentBuild.currentResult}\nReport: ${BUILD_URL}",
-    to: "kaushikmayank961@gmail.com",
-    from: "kaushikmayank961@gmail.com",
-    replyTo: "kaushikmayank961@gmail.com",
-    mimeType: 'text/plain',
-    attachLog: true
-)
+            emailext(
+                to: 'kaushikmayank961@gmail.com',
+                subject: "Automation Report - Build #${env.BUILD_NUMBER}",
+                body: """Build Status: ${currentBuild.currentResult}
+Job Name: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+Build URL: ${env.BUILD_URL}""",
+                mimeType: 'text/plain',
+                attachLog: true
+            )
         }
     }
 }
