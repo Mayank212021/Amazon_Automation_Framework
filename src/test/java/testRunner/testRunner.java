@@ -28,10 +28,13 @@ import io.cucumber.testng.CucumberOptions;
 	        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 	    }
 	)
+
+
 public class testRunner extends AbstractTestNGCucumberTests {
 	
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
 
+	// git update
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String browserName) {
