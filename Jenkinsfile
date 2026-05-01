@@ -1,46 +1,37 @@
-pipeline {
-    agent any
+post {
+    always {
 
-    stages {
+        archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
 
-        stage('Build') {
-            steps {
-                bat 'mvn clean compile'
-            }
-        }
+        publishHTML([
+            reportDir: 'target',
+            reportFiles: 'ExtentReport_*.html',
+            reportName: 'Extent Report',
+            keepAll: true,
+            alwaysLinkToLastBuild: true,
+            allowMissing: true
+        ])
 
-        stage('Test') {
-            steps {
-                bat 'mvn test || exit 0'
-            }
-        }
+        publishHTML([
+            reportDir: 'target',
+            reportFiles: 'cucumber-report-*.html',
+            reportName: 'Cucumber Report',
+            keepAll: true,
+            alwaysLinkToLastBuild: true,
+            allowMissing: true
+        ])
+
+        // 🔥 EMAIL भेजना
+        emailext (
+            subject: "Automation Report - Build #${BUILD_NUMBER}",
+            body: """
+            Build Status: ${currentBuild.currentResult}
+
+            View Reports:
+            ${BUILD_URL}
+
+            """,
+            to: "kaushikmayank961@gmail.com"
+        )
     }
-
-    post {
-        always {
-
-            // HTML archive
-            archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
-
-            // Extent Report UI
-            publishHTML([
-                reportDir: 'target',
-                reportFiles: 'ExtentReport_*.html',
-                reportName: 'Extent Report',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: true
-            ])
-
-            // Cucumber Report UI
-            publishHTML([
-                reportDir: 'target',
-                reportFiles: 'cucumber-report-*.html',
-                reportName: 'Cucumber Report',
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: true
-            ])
-        }
-    } 
 }
