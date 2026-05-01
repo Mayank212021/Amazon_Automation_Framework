@@ -3,6 +3,7 @@ package pageObject;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,8 +29,7 @@ public class cartPage {
 	}
 
 	@FindBy(xpath = "//span[contains(text(),'Thermometer')]")
-	List<WebElement> cartProducts;
-
+	private List<WebElement> cartProducts;
 	// ✅ Cart count (top icon)
 	@FindBy(id = "nav-cart-count")
 	WebElement cartCount;
@@ -39,18 +39,23 @@ public class cartPage {
 
 	// 🔥 Verify product present
 	public boolean isProductPresentInCart(String productName) {
-		wait.until(ExpectedConditions.visibilityOfAllElements(cartProducts));
 
-		for (WebElement product : cartProducts) {
-			String text = product.getText().trim().toLowerCase();
-			if (text.contains(productName.toLowerCase())) {
-				log.logger.info("✅ Product found in cart: " + text);
-				return true;
-			}
-		}
+	    WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(40));
 
-		log.logger.error("❌ Product NOT found in cart");
-		return false;
+	    // scroll (Amazon cart lazy load fix)
+	    JavascriptExecutor js = (JavascriptExecutor) ldriver;
+	    js.executeScript("window.scrollBy(0,500)");
+
+	    // wait for elements to be present
+	    wait.until(ExpectedConditions.visibilityOfAllElements(cartProducts));
+
+	    for (WebElement product : cartProducts) {
+	        if (product.getText().contains(productName) && product.isDisplayed()) {
+	            return true;
+	        }
+	    }
+
+	    return false;
 	}
 
 	// 🔥 Verify cart not empty
