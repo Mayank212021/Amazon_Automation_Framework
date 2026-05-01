@@ -27,7 +27,7 @@ public class cartPage {
 		wait = new WebDriverWait(ldriver, Duration.ofSeconds(20));
 	}
 
-	@FindBy(xpath = "//span[@class='a-truncate-cut']")
+	@FindBy(xpath = "//span[contains(text(),'Thermometer')]")
 	List<WebElement> cartProducts;
 
 	// ✅ Cart count (top icon)
