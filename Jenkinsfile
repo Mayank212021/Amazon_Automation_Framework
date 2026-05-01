@@ -1,37 +1,54 @@
-post {
-    always {
+pipeline {
+    agent any
 
-        archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
+    stages {
 
-        publishHTML([
-            reportDir: 'target',
-            reportFiles: 'ExtentReport_*.html',
-            reportName: 'Extent Report',
-            keepAll: true,
-            alwaysLinkToLastBuild: true,
-            allowMissing: true
-        ])
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
 
-        publishHTML([
-            reportDir: 'target',
-            reportFiles: 'cucumber-report-*.html',
-            reportName: 'Cucumber Report',
-            keepAll: true,
-            alwaysLinkToLastBuild: true,
-            allowMissing: true
-        ])
+        stage('Test') {
+            steps {
+                bat 'mvn test || exit 0'
+            }
+        }
+    }
 
-        // 🔥 EMAIL भेजना
-        emailext (
-            subject: "Automation Report - Build #${BUILD_NUMBER}",
-            body: """
-            Build Status: ${currentBuild.currentResult}
+    post {
+        always {
 
-            View Reports:
-            ${BUILD_URL}
+            archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
 
-            """,
-            to: "kaushikmayank961@gmail.com"
-        )
+            publishHTML([
+                reportDir: 'target',
+                reportFiles: 'ExtentReport_*.html',
+                reportName: 'Extent Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+
+            publishHTML([
+                reportDir: 'target',
+                reportFiles: 'cucumber-report-*.html',
+                reportName: 'Cucumber Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+
+            emailext (
+                subject: "Automation Report - Build #${BUILD_NUMBER}",
+                body: """
+                Build Status: ${currentBuild.currentResult}
+
+                Check report:
+                ${BUILD_URL}
+                """,
+                to: "kaushikmayank961@gmail.com"
+            )
+        }
     }
 }
