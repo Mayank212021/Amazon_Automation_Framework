@@ -9,9 +9,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import Utilities.ReportRenamer;
+
 import Utilities.log;
 import base.baseClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -32,8 +33,8 @@ public class testRunner extends AbstractTestNGCucumberTests {
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
 
 	@Parameters("browser")
-	@BeforeMethod(alwaysRun = true)   // 🔥 CHANGE THIS
-	public void setUp(String browserName) {
+	@BeforeMethod(alwaysRun = true)
+	public void setUp(@Optional("chrome") String browserName) {
 
 	    browserThread.set(browserName);
 
