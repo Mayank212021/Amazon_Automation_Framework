@@ -22,7 +22,11 @@ import io.cucumber.testng.CucumberOptions;
 	    features = "src/test/java/features/AmazonPurchase.feature",
 	    glue = "stepDefinitions",
 	    tags = "@Regression",
-	    monochrome = true
+	    monochrome = true,
+	    		 plugin = {
+	    			        "pretty",
+	    			        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+	    			    }
 	)
 
 
@@ -61,8 +65,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
                 "html:target/cucumber-report-" + time + ".html," +
                 "json:target/cucumber-" + time + ".json," +
                 "junit:target/cucumber-" + time + ".xml," +
-                "rerun:target/failed_scenario.txt," +
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:");
+                "rerun:target/failed_scenario.txt," );
 
         System.setProperty("extent.reporter.spark.out",
                 "target/ExtentReport_" + time + ".html");
