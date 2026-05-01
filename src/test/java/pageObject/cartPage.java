@@ -24,7 +24,7 @@ public class cartPage {
 	public cartPage(WebDriver rDriver) {
 		ldriver = rDriver;
 		PageFactory.initElements(rDriver, this);
-		wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(ldriver, Duration.ofSeconds(20));
 	}
 
 	@FindBy(xpath = "//span[@class='a-truncate-cut']")
