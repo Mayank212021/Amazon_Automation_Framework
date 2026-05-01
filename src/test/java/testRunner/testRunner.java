@@ -69,6 +69,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
         System.setProperty("extent.reporter.spark.out",
                 "target/ExtentReport_" + time + ".html");
+        System.setProperty("extent.reporter.spark.inline", "true");
     }
     
    
