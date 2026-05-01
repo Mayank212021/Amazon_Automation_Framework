@@ -39,16 +39,34 @@ pipeline {
                 allowMissing: true
             ])
 
-            emailext(
-                to: 'kaushikmayank961@gmail.com',
-                subject: "Automation Report - Build #${env.BUILD_NUMBER}",
-                body: """Build Status: ${currentBuild.currentResult}
-Job Name: ${env.JOB_NAME}
-Build Number: ${env.BUILD_NUMBER}
-Build URL: ${env.BUILD_URL}""",
-                mimeType: 'text/plain',
-                attachLog: true
-            )
+           emailext(
+    to: 'kaushikmayank961@gmail.com',
+    subject: "Automation Report - Build #${env.BUILD_NUMBER}",
+    
+    mimeType: 'text/html',
+
+    body: """
+    <h2>🚀 Automation Execution Report</h2>
+
+    <p><b>Job:</b> ${env.JOB_NAME}</p>
+    <p><b>Build:</b> ${env.BUILD_NUMBER}</p>
+    <p><b>Status:</b> ${currentBuild.currentResult}</p>
+
+    <h3>📊 Extent Report</h3>
+    <p>
+        👉 <a href="${env.BUILD_URL}Extent_20Report/">
+        Click here to view full Extent Report
+        </a>
+    </p>
+
+    <br>
+    <p>Thanks,<br>Jenkins</p>
+    """,
+
+    attachmentsPattern: 'target/ExtentReport_*.html',
+
+    attachLog: true
+)
         }
     }
 }
