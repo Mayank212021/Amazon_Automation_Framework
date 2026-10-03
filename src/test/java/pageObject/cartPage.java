@@ -30,6 +30,7 @@ public class cartPage {
 
 	@FindBy(xpath = "//span[contains(text(),'Thermometer')]")
 	private List<WebElement> cartProducts;
+	
 	// ✅ Cart count (top icon)
 	@FindBy(id = "nav-cart-count")
 	WebElement cartCount;
@@ -40,14 +41,14 @@ public class cartPage {
 	// 🔥 Verify product present
 	public boolean isProductPresentInCart(String productName) {
 
-	    WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(40));
+	    WebDriverWait productWait = new WebDriverWait(ldriver, Duration.ofSeconds(40));
 
 	    // scroll
 	    JavascriptExecutor js = (JavascriptExecutor) ldriver;
 	    js.executeScript("window.scrollBy(0,500)");
 
 	    // wait सिर्फ list आने तक (visibility नहीं)
-	    wait.until(driver -> cartProducts.size() > 0);
+	    productWait.until(driver -> cartProducts.size() > 0);
 
 	    for (WebElement product : cartProducts) {
 	        if (product.isDisplayed() && product.getText().contains(productName)) {
@@ -72,10 +73,17 @@ public class cartPage {
 	}
 
 	public void clickProceedToBuy() {
-		proceedToBuyBtn.click();
+	    wait.until(
+	        ExpectedConditions.elementToBeClickable(proceedToBuyBtn)
+	    ).click();
+
+	    wait.until(
+	        ExpectedConditions.urlContains("checkout")
+	    );
 	}
 
 	public boolean isCheckoutPageDisplayed() {
+		
 		return ldriver.getCurrentUrl().contains("checkout");
 	}
 
