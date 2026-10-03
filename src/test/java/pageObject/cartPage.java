@@ -60,7 +60,7 @@ public class cartPage {
 	}
 
 	// 🔥 Verify cart not empty
-	public boolean isCartNotEmpty() {
+	public boolean isCartNotEmpty() { 
 		wait.until(driver -> {
 			String count = cartCount.getText().trim();
 			return !count.isEmpty();
