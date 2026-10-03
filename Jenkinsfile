@@ -17,8 +17,14 @@ pipeline {
     }
 
     post {
-        always {
-
+        always { 
+			
+            testNG(
+    reportFilenamePattern: 'test-output/testng-results.xml',
+    escapeExceptionMsg: true,
+    escapeTestDescp: true,
+    showFailedBuilds: true
+)
             archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
 
             publishHTML([
