@@ -35,7 +35,7 @@ public class cartPage {
 	@FindBy(id = "nav-cart-count")
 	WebElement cartCount;
 
-	@FindBy(xpath = "//input[@name='proceedToRetailCheckout11']")
+	@FindBy(xpath = "//input[@name='proceedToRetailCheckout']")
 	WebElement proceedToBuyBtn;
 
 	// 🔥 Verify product present
