@@ -20,7 +20,7 @@ pipeline {
         always { 
 			
             testNG(
-    reportFilenamePattern: 'test-output/testng-results.xml',
+    reportFilenamePattern: 'target/surefire-reports/testng-results.xml',
     escapeExceptionMsg: true,
     escapeTestDescp: true,
     showFailedBuilds: true
