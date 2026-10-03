@@ -72,7 +72,7 @@ public class cartPage {
 		return count > 0;
 	}
 
-	public void clickProceedToBuy() {
+	public void clickProceedToBuy() { 
 	    wait.until(
 	        ExpectedConditions.elementToBeClickable(proceedToBuyBtn)
 	    ).click();
