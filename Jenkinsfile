@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'mvn test || exit 0'
+                bat 'mvn test'
             }
         }
     }
