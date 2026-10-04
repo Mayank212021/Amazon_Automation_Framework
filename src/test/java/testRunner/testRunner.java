@@ -34,10 +34,16 @@ public class testRunner extends AbstractTestNGCucumberTests {
 	
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
 
-	// git update browser
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional("chrome") String browserName) {
+
+	    // Jenkins system property has higher priority
+	    String jenkinsBrowser = System.getProperty("browser");
+
+	    if (jenkinsBrowser != null && !jenkinsBrowser.trim().isEmpty()) {
+	        browserName = jenkinsBrowser;
+	    }
 
 	    browserThread.set(browserName);
 
@@ -110,4 +116,3 @@ public class testRunner extends AbstractTestNGCucumberTests {
 }
 
 
-// test12

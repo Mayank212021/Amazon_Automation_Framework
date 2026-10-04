@@ -9,11 +9,11 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                bat 'mvn test'
-            }
-        }
+     stage('Test') {
+    steps {
+        bat 'mvn test -Dbrowser=%browser%'
+    }
+}
     }
 
     post {
