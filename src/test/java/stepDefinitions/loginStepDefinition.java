@@ -84,20 +84,44 @@ public class loginStepDefinition {
         log.logger.info("Clicking on Sign In button");
     }
 
-    @Then("user should get {string}")
-    public void verifyLogin(String expected) {
+    @Then("user should be logged in as {string}")
+    public void verifyLogin(String expectedUserName) {
 
-        if(expected.equalsIgnoreCase("success")){
-            Assert.assertTrue(loginpage.isUserLoggedIn());
+            Assert.assertTrue(loginpage.isUserLoggedIn(expectedUserName), "Login failed: Expected user '" 
+                    + expectedUserName 
+                    + "' was not logged in.");
             log.logger.info("User is logged in successfully");
 
-        } else if(expected.equalsIgnoreCase("user_not_found")){
-            Assert.assertTrue(loginpage.isErrorDisplayed());
-            log.logger.info("User is not logged in because phone number is not registered");
-
-        } else if(expected.equalsIgnoreCase("wrong_password")){
-            Assert.assertTrue(loginpage.isWrongPasswordErrorDisplayed());
-            log.logger.info("User is not logged in because of wrong password");
-        }
+       
     }
+    
+    @Then("user should see the user not found error")
+    public void verifyUserNotFoundError() {
+
+        Assert.assertTrue( 
+                loginpage.isErrorDisplayed(),
+                "User not found error was not displayed." 
+        );
+
+        log.logger.info(
+                "User is not logged in because phone number is not registered"
+        );
+    }
+    
+    @Then("user should see the wrong password error")
+    public void verifyWrongPasswordError() {
+
+        Assert.assertTrue(
+                loginpage.isWrongPasswordErrorDisplayed(),
+                "Wrong password error was not displayed."
+        );
+
+        log.logger.info(
+                "User is not logged in because of wrong password"
+        );
+    }
+    
+    
+    
+    
 }
