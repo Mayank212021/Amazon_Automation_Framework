@@ -55,14 +55,17 @@ public class baseClass {
                 org.openqa.selenium.edge.EdgeOptions edgeOptions =
                         new org.openqa.selenium.edge.EdgeOptions();
 
-                edgeOptions.addArguments("--headless=new");
+                if (System.getenv("JENKINS_URL") != null) {
+                    edgeOptions.addArguments("--headless=new");
+                }
                 edgeOptions.addArguments("--window-size=1920,1080");
                 edgeOptions.addArguments("--remote-allow-origins=*");
                 edgeOptions.addArguments("--disable-gpu");
                 edgeOptions.addArguments("--no-sandbox");
                 edgeOptions.addArguments("--disable-dev-shm-usage");
-                edgeOptions.addArguments("--user-data-dir=" + System.getProperty("java.io.tmpdir")
-                        + "\\edge_profile_" + Thread.currentThread().getId());
+                String profileDir = "C:\\jenkins_edge_profiles\\" + Thread.currentThread().getId() + "_" + System.nanoTime();
+                new java.io.File(profileDir).mkdirs();
+                edgeOptions.addArguments("--user-data-dir=" + profileDir);
 
                 driverInstance = new EdgeDriver(edgeOptions);
                 break;
