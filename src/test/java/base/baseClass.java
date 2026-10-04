@@ -48,9 +48,23 @@ public class baseClass {
                 driverInstance = new ChromeDriver();
                 break;
 
+         
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                driverInstance = new EdgeDriver();
+
+                org.openqa.selenium.edge.EdgeOptions edgeOptions =
+                        new org.openqa.selenium.edge.EdgeOptions();
+
+                edgeOptions.addArguments("--headless=new");
+                edgeOptions.addArguments("--window-size=1920,1080");
+                edgeOptions.addArguments("--remote-allow-origins=*");
+                edgeOptions.addArguments("--disable-gpu");
+                edgeOptions.addArguments("--no-sandbox");
+                edgeOptions.addArguments("--disable-dev-shm-usage");
+                edgeOptions.addArguments("--user-data-dir=" + System.getProperty("java.io.tmpdir")
+                        + "\\edge_profile_" + Thread.currentThread().getId());
+
+                driverInstance = new EdgeDriver(edgeOptions);
                 break;
 
             default:
