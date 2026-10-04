@@ -1,6 +1,7 @@
 package pageObject;
 
 import java.time.Duration;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,11 +24,8 @@ WebDriver ldriver;
 	}
 	
 	@FindBy(xpath = "//span[contains(text(),'Hello')]")
-	WebElement HellosignIn;
+	WebElement HellosignIn; 
 		
-	
-	
-
 	@FindBy(xpath = "//span[text()='Sign in']")
 	WebElement signInLink;
 	
@@ -35,7 +33,7 @@ WebDriver ldriver;
 	@FindBy(id = "ap_email_login")
 	WebElement emailAddress;
 	
-	@FindBy(xpath = "//input[@type='submit']")
+	@FindBy(xpath = "//input[@type='submit']") 
 	WebElement continueButton;
 	
 	@FindBy(id = "ap_password")
@@ -77,8 +75,9 @@ WebDriver ldriver;
 		    WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
 
 		    try {
-		        WebElement signIn = wait.until(
-		            ExpectedConditions.visibilityOf(signInLink)
+		    	WebElement signIn = wait.until(
+		    		    ExpectedConditions.elementToBeClickable(signInLink)
+		    	
 		        );
 
 		        signIn.click();
@@ -117,18 +116,32 @@ WebDriver ldriver;
 	
 }
    
-   public boolean isUserLoggedIn() {
-	    
-	    WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-	    
+   public boolean isUserLoggedIn(String expectedUserName) {
+
+	    WebDriverWait wait =
+	            new WebDriverWait(ldriver, Duration.ofSeconds(10));
+
 	    try {
-	        wait.until(ExpectedConditions.visibilityOf(helloUserText));
-	        return helloUserText.getText().contains("Hello");
+
+	        wait.until(
+	                ExpectedConditions.visibilityOf(helloUserText)
+	        );
+
+	        String actualText =
+	                helloUserText.getText().trim();
+
+	        System.out.println(
+	                "Account Greeting: " + actualText
+	        );
+
+	        return actualText.contains(expectedUserName)
+	                && !actualText.toLowerCase().contains("sign in");
+
 	    } catch (Exception e) {
+
 	        return false;
 	    }
 	}
-   
    
    public boolean isErrorDisplayed() {
 
@@ -140,8 +153,8 @@ WebDriver ldriver;
 	        String msg = errorMessageBox.getText();
 	        System.out.println("Error Message: " + msg);
 
-	        return msg.toLowerCase().contains("Let's") 
-	            || msg.toLowerCase().contains("create");
+	        return msg.toLowerCase().contains("let's")
+	                || msg.toLowerCase().contains("create");
 
 	    } catch (Exception e) {
 	        return false;
@@ -151,7 +164,7 @@ WebDriver ldriver;
    public boolean isWrongPasswordErrorDisplayed() {
 
 	    try {
-	        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+	        WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10)); 
 
 	        wait.until(ExpectedConditions.visibilityOf(incorrectMessage));
 
