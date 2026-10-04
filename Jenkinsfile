@@ -11,7 +11,7 @@ pipeline {
 
      stage('Test') {
     steps {
-        bat 'mvn test -Dbrowser=%browser%'
+       bat 'mvn test -Dbrowser=%browser% -Dcucumber.filter.tags=%TEST_TYPE%'
     }
 }
     } 

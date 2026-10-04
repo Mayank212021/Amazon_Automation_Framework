@@ -15,7 +15,7 @@ Scenario Outline: Valid user adds product to cart
   And click on the Continue button
   And Enter the valid password "<password>" into password field
   And Click on the Sign In button
-  Then user should get "success"
+  Then user should be logged in as "Mayank"
 
   When User clicks in the search field box
   And User enters the product name "<productName>"
@@ -44,12 +44,12 @@ Examples:
 
 
 # ❌ INVALID USER FLOW
-@Regression
+@Smoke @Regressione
 Scenario Outline: Invalid user should not login
 
   Given User enters the valid phone number "<phone>" into the fieldbox
   And click on the Continue button
-  Then user should get "error"
+  Then user should see the user not found error
 
 Examples:
 | phone      |
@@ -58,14 +58,14 @@ Examples:
 
 
 
-@Regression
+@Smoke @Regression
 Scenario Outline: Valid user enters wrong password
 
   Given User enters the valid phone number "<phone>" into the fieldbox
   And click on the Continue button
   And Enter the valid password "<password>" into password field
   And Click on the Sign In button
-  Then user should get "wrong_password"
+  Then user should see the wrong password error
 
 Examples:
 | phone      | password  |
