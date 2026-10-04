@@ -41,10 +41,10 @@ Scenario Outline: Valid user adds product to cart
 Examples:
 | phone      | password   | productName |
 | 8630718216 | Kaushik21# | Thermometer |
-
+ 
 
 # ❌ INVALID USER FLOW
-@Smoke @Regressione
+@Smoke @Regression
 Scenario Outline: Invalid user should not login
 
   Given User enters the valid phone number "<phone>" into the fieldbox
