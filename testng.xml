@@ -1,7 +1,7 @@
 <suite name="CrossBrowserSuite" parallel="tests" thread-count="2">
 
     <test name="ChromeTest">
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="edge"/>
         <classes>
             <class name="testRunner.testRunner"/>
         </classes>
