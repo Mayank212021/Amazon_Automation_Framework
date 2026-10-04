@@ -14,7 +14,7 @@ pipeline {
         bat 'mvn test -Dbrowser=%browser%'
     }
 }
-    }
+    } 
 
     post {
         always { 
