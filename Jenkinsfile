@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     parameters {
-        choice(name: 'BROWSER', choices: ['chrome', 'edge'], description: 'Select browser')
+        choice(name: 'browser', choices: ['chrome', 'edge'], description: 'Select browser')
         choice(name: 'TEST_TYPE', choices: ['@Smoke', '@Regression'], description: 'Suite')
     }
 
     triggers {
-        parameterizedCron('00 16 * * * %BROWSER=edge;TEST_TYPE=@Regression')
+        parameterizedCron('30 23 * * * %browser=edge;TEST_TYPE=@Regression')
     }
 
     stages {
 
-        stage('Build') {
+        stage('Build') { 
             steps {
                 bat 'mvn clean compile'
             }
