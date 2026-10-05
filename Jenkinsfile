@@ -68,11 +68,11 @@ pipeline {
        <b>${currentBuild.currentResult}</b></span></p>
     <p><b>Browser:</b> ${params.browser} | <b>Suite:</b> ${params.TEST_TYPE}</p>
 
-    <h3>Test Summary</h3>
-    <p><b>Total Tests:</b> ${TEST_COUNTS, var="total"}</p>
-    <p><b>Passed:</b> ${TEST_COUNTS, var="pass"}</p>
-    <p><b>Failed:</b> ${TEST_COUNTS, var="fail"}</p>
-    <p><b>Skipped:</b> ${TEST_COUNTS, var="skip"}</p>
+       <h3>Test Summary</h3>
+    <p><b>Total Tests:</b> \${TEST_COUNTS, var='total'}</p>
+    <p><b>Passed:</b> \${TEST_COUNTS, var='pass'}</p>
+    <p><b>Failed:</b> \${TEST_COUNTS, var='fail'}</p>
+    <p><b>Skipped:</b> \${TEST_COUNTS, var='skip'}</p>
 
     <h3>Reports</h3>
     <p><a href="${env.BUILD_URL}Extent_20Report/">Extent Report</a></p>
