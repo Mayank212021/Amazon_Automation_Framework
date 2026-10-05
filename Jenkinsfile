@@ -54,33 +54,51 @@ pipeline {
                 allowMissing: true
             ])
 
-          emailext(
+         emailext(
     to: 'kaushikmayank961@gmail.com',
     subject: "${currentBuild.currentResult}: Automation Report - Build #${env.BUILD_NUMBER}",
     mimeType: 'text/html',
     body: """
-    <h2>Automation Execution Report</h2>
+    <h2>🚀 Automation Execution Report</h2>
 
     <p><b>Job:</b> ${env.JOB_NAME}</p>
     <p><b>Build:</b> #${env.BUILD_NUMBER}</p>
+
     <p><b>Status:</b>
-       <span style="color:${currentBuild.currentResult == 'SUCCESS' ? 'green' : 'red'};">
-       <b>${currentBuild.currentResult}</b></span></p>
-    <p><b>Browser:</b> ${params.browser} | <b>Suite:</b> ${params.TEST_TYPE}</p>
+        <span style="color:${currentBuild.currentResult == 'SUCCESS' ? 'green' : 'red'};">
+            <b>${currentBuild.currentResult}</b>
+        </span>
+    </p>
 
-       <h3>Test Summary</h3>
-    <p><b>Total Tests:</b> \${TEST_COUNTS, var='total'}</p>
-    <p><b>Passed:</b> \${TEST_COUNTS, var='pass'}</p>
-    <p><b>Failed:</b> \${TEST_COUNTS, var='fail'}</p>
-    <p><b>Skipped:</b> \${TEST_COUNTS, var='skip'}</p>
+    <p><b>Browser:</b> ${params.browser}
+       | <b>Suite:</b> ${params.TEST_TYPE}</p>
 
-    <h3>Reports</h3>
-    <p><a href="${env.BUILD_URL}Extent_20Report/">Extent Report</a></p>
-    <p><a href="${env.BUILD_URL}console">Console Log</a></p>
+    <h3>📊 Test Summary</h3>
+
+    <p><b>Total Tests:</b> $${TEST_COUNTS,var="total"}</p>
+    <p><b>Passed:</b> $${TEST_COUNTS,var="pass"}</p>
+    <p><b>Failed:</b> $${TEST_COUNTS,var="fail"}</p>
+    <p><b>Skipped:</b> $${TEST_COUNTS,var="skip"}</p>
+
+    <h3>📄 Reports</h3>
+
+    <p>
+        <a href="${env.BUILD_URL}Extent_20Report/">
+            Extent Report
+        </a>
+    </p>
+
+    <p>
+        <a href="${env.BUILD_URL}console">
+            Console Log
+        </a>
+    </p>
 
     <br>
+
     <p>Thanks,<br>Jenkins</p>
     """,
+
     attachmentsPattern: 'target/ExtentReport_*.html',
     attachLog: true
 )
