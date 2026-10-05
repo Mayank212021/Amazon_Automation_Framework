@@ -70,15 +70,14 @@ pipeline {
         </span>
     </p>
 
-    <p><b>Browser:</b> ${params.browser}
-       | <b>Suite:</b> ${params.TEST_TYPE}</p>
+    <p><b>Browser:</b> ${params.browser} |
+       <b>Suite:</b> ${params.TEST_TYPE}</p>
 
     <h3>📊 Test Summary</h3>
-
-    <p><b>Total Tests:</b> $${TEST_COUNTS,var="total"}</p>
-    <p><b>Passed:</b> $${TEST_COUNTS,var="pass"}</p>
-    <p><b>Failed:</b> $${TEST_COUNTS,var="fail"}</p>
-    <p><b>Skipped:</b> $${TEST_COUNTS,var="skip"}</p>
+    <p><b>Total Tests:</b> \${TEST_COUNTS,var="total"}</p>
+    <p><b>Passed:</b> \${TEST_COUNTS,var="pass"}</p>
+    <p><b>Failed:</b> \${TEST_COUNTS,var="fail"}</p>
+    <p><b>Skipped:</b> \${TEST_COUNTS,var="skip"}</p>
 
     <h3>📄 Reports</h3>
 
@@ -95,10 +94,8 @@ pipeline {
     </p>
 
     <br>
-
     <p>Thanks,<br>Jenkins</p>
     """,
-
     attachmentsPattern: 'target/ExtentReport_*.html',
     attachLog: true
 )
