@@ -21,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 	    features = "src/test/java/features/AmazonPurchase.feature",
 	    glue = "stepDefinitions",
-	    tags = "@Regression",
+	    tags = "@Smoke",
 	    monochrome = true,
 	    		 plugin = {
 	    			        "pretty",
@@ -33,6 +33,7 @@ import io.cucumber.testng.CucumberOptions;
 public class testRunner extends AbstractTestNGCucumberTests {
 	
 	public static ThreadLocal<String> browserThread = new ThreadLocal<>();
+	public static volatile String suiteBrowser;
 
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
@@ -46,6 +47,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
 	    }
 
 	    browserThread.set(browserName);
+	    suiteBrowser = browserName;
 
 	    System.out.println("RUNNING ON: " + browserName +
 	        " | THREAD: " + Thread.currentThread().getId());
@@ -92,14 +94,12 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
             log.logger.info("🔥 Rerunning Failed Scenarios...");
 
-            for (int i = 1; i <= 1; i++) { {
+            for (int i = 1; i <= 1; i++) {
 
                 org.testng.TestNG testng = new org.testng.TestNG();
 
-                // 🔥 IMPORTANT: Same browser pass karna padega
                 testng.setTestClasses(new Class[]{failedTestRunner.class});
 
-                // ✅ Pass parameter properly
                 testng.setDefaultSuiteName("RerunSuite");
                 testng.setDefaultTestName("RerunTest");
 
