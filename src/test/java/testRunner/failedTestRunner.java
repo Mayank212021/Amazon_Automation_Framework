@@ -3,32 +3,44 @@ package testRunner;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.Parameters; 
 
 import base.baseClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "@target/failed_scenario.txt",
+    features = "@target/failed_scenario.txt", 
     glue = "stepDefinitions",
     monochrome = true
 )
 public class failedTestRunner extends AbstractTestNGCucumberTests {
 
-    // ✅ SAME AS MAIN RUNNER
-    @BeforeClass
-    @Parameters("browser")
-    public void setUp(String br) {
+    // ✅ SAME AS MAIN RUNNER 
+	@BeforeMethod(alwaysRun = true)
+	public void setUp() {
 
-        System.out.println("🔥 RERUN THREAD: "
-                + Thread.currentThread().getId() + " -> " + br);
+		String browser = System.getProperty("browser");
 
-        baseClass.setBrowser(br);
-    }
+		if (browser == null || browser.trim().isEmpty()) {
+		    browser = testRunner.suiteBrowser;
+		}
 
+		if (browser == null || browser.trim().isEmpty()) {
+		    browser = "chrome";
+		}
+	    System.out.println("🔥 RERUN ON: "
+	            + browser
+	            + " | THREAD: "
+	            + Thread.currentThread().getId());
+
+	    testRunner.browserThread.set(browser);
+	    testRunner.suiteBrowser = browser;
+	    baseClass.setBrowser(browser);
+	
+	}
     // ✅ Parallel rerun support
     @Override
     @DataProvider(parallel = true)

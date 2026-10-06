@@ -26,7 +26,12 @@ public class hooks {
 	@Before
 	public void setup(Scenario scenarioObj) {
 
-	    String browser = testRunner.getBrowser(); // ✅ always available
+	     // ✅ always available
+	    String browser = testRunner.getBrowser();
+
+	    if (browser == null || browser.trim().isEmpty()) {
+	        browser = testRunner.suiteBrowser;
+	    }
 	    baseClass.setBrowser(browser);
 
 	    if (browser == null) {
