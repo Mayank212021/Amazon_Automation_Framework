@@ -17,8 +17,14 @@ pipeline {
                 bat 'mvn clean compile'
             }
         }
+        
+        
 
      stage('Test') {
+		environment {
+    AMAZON_CREDENTIALS = credentials('amazon_valid_user_01')
+}
+		
     steps {
        bat 'mvn test -Dbrowser=%browser% -Dcucumber.filter.tags=%TEST_TYPE%'
     }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import Utilities.TestCredentials;
 import Utilities.log;
 import base.baseClass;
 import io.cucumber.java.en.And;
@@ -52,6 +53,21 @@ public class loginStepDefinition {
     @Then("User move to the Login page")
     public void verify_login_page() {
         log.logger.info("User is on login page");
+    }
+    
+    
+    @Given("User logs in with valid credentials {string}")
+    public void loginWithValidCredentials(String user) {
+
+        log.info("Logging in with test user: " + user);
+
+        String username = TestCredentials.getUsername(user);
+        String password = TestCredentials.getPassword(user);
+
+        loginpage.enterEmailAddress(username);
+        loginpage.clickOnContinueButton();
+        loginpage.enterPassword(password);
+        loginpage.clickOnSigninButton();
     }
 
     @When("User enters the valid phone number {string} into the fieldbox")

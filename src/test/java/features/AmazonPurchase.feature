@@ -11,12 +11,8 @@ Background:
 @Regression
 Scenario Outline: Valid user adds product to cart
 
-  Given User enters the valid phone number "<phone>" into the fieldbox
-  And click on the Continue button
-  And Enter the valid password "<password>" into password field
-  And Click on the Sign In button
-  Then user should be logged in as "Mayank"
-
+  Given User logs in with valid credentials "<user>"
+  
   When User clicks in the search field box
   And User enters the product name "<productName>"
   And Clicks on the search icon button
@@ -37,6 +33,10 @@ Scenario Outline: Valid user adds product to cart
   And User selects delivery address
   Then User should be redirected to payment page
   And User selects the payment method
+
+Examples:
+| user        | productName |
+| validUser01 | Thermometer |
 
 Examples:
 | phone      | password   | productName |
