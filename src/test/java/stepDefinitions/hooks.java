@@ -1,6 +1,12 @@
 package stepDefinitions;
 
 import java.time.Duration;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -45,37 +51,74 @@ public class hooks {
 	    baseClass.getDriver().get("https://www.amazon.in/");
 	}
 
+	
+
     // 🔥 Screenshot on every failed step
-    @AfterStep
-    public void captureStepFailure(Scenario scenarioObj) {
+	@AfterStep
+	public void captureStepFailure(Scenario scenarioObj) {
 
-        if (scenarioObj.isFailed() && baseClass.getDriver() != null) {
+	    if (scenarioObj.isFailed() && baseClass.getDriver() != null) {
 
-            log.error("❌ Step failed - capturing screenshot");
+	        try {
 
-            byte[] screenshot = ((TakesScreenshot) baseClass.getDriver())
-                    .getScreenshotAs(OutputType.BYTES);
+	            log.error("❌ Step failed - capturing screenshot");
 
-            scenarioObj.attach(screenshot, "image/png", "Failed Step Screenshot");
-        }
-    }
+	            // Capture screenshot
+	            byte[] screenshot = ((TakesScreenshot) baseClass.getDriver())
+	                    .getScreenshotAs(OutputType.BYTES);
+
+	            // Create screenshots folder
+	            Path screenshotFolder = Paths.get("target", "screenshots");
+	            Files.createDirectories(screenshotFolder);
+
+	            // Create unique screenshot name
+	            String time = new SimpleDateFormat("MM-dd-yyyy_HH-mm-ss-SSS")
+	                    .format(new Date());
+
+	            String scenarioName = scenarioObj.getName()
+	                    .replaceAll("[^a-zA-Z0-9-_]", "_");
+
+	            String browser = baseClass.getBrowser();
+
+	            String fileName = scenarioName
+	                    + "_" + browser
+	                    + "_" + time
+	                    + ".png";
+
+	            Path screenshotPath = screenshotFolder.resolve(fileName);
+
+	            // Save screenshot as physical PNG file
+	            Files.write(screenshotPath, screenshot);
+
+	            log.info("📸 Screenshot saved: " + screenshotPath);
+
+	            // Keep existing Cucumber report attachment
+	            scenarioObj.attach(
+	                    screenshot,
+	                    "image/png",
+	                    "Failed Step Screenshot"
+	            );
+
+	        } catch (Exception e) {
+
+	            log.error("❌ Failed to save screenshot: " + e.getMessage());
+	        }
+	    }
+	}
 
     @After
     public void tearDown(Scenario scenarioObj) {
 
-        log.info("========== 🏁 SCENARIO ENDED ==========");
-        log.info("Scenario Status: " + scenarioObj.getStatus());
+        log.info(
+            "========== SCENARIO ENDED =========="
+        );
 
-        if (scenarioObj.isFailed() && baseClass.getDriver() != null) {
+        log.info(
+            "Scenario Status: "
+                    + scenarioObj.getStatus()
+        );
 
-            log.error("❌ Scenario failed - final screenshot captured");
-
-            byte[] screenshot = ((TakesScreenshot) baseClass.getDriver())
-                    .getScreenshotAs(OutputType.BYTES);
-
-            scenarioObj.attach(screenshot, "image/png", "Final Failure Screenshot");
-        }
-
+        // Browser close karo
         baseClass.quitDriver();
     }
 }

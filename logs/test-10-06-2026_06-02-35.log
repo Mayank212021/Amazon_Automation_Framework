@@ -1,0 +1,32 @@
+06:02:35 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: edge
+06:02:35 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+06:02:35 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> Scenario: Invalid user should not login [edge]
+06:03:02 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+06:03:02 INFO  Utilities.log - Browser launched successfully
+06:03:02 INFO  Utilities.log - Navigating to Amazon home page
+06:03:04 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:03:06 INFO  Utilities.log - Clicking on Sign in link
+06:03:06 INFO  Utilities.log - Entering phone number: 7520720735
+06:03:08 INFO  Utilities.log - Clicking on Continue button
+06:03:28 ERROR Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+06:03:28 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> 📸 Screenshot saved: target\screenshots\Invalid_user_should_not_login_edge_10-06-2026_18-03-28-841.png
+06:03:28 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> ========== SCENARIO ENDED ==========
+06:03:28 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+06:03:28 INFO  Utilities.log - [BROWSER: edge] [SCENARIO: Invalid user should not login [edge]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+06:03:29 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully
+06:03:30 INFO  Utilities.log - 🔥 Rerunning Failed Scenarios...
+06:03:30 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: chrome
+06:03:30 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> 🚀 Starting execution on browser: chrome
+06:03:30 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> ========== 🚀 SCENARIO STARTED ==========
+06:03:30 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario: Invalid user should not login [chrome]
+06:03:53 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> ✅ Browser launched successfully
+06:03:53 INFO  Utilities.log - Browser launched successfully
+06:03:53 INFO  Utilities.log - Navigating to Amazon home page
+06:03:57 INFO  Utilities.log - Clicking on Hello, Sign in option
+06:04:07 INFO  Utilities.log - Clicking on Sign in link
+06:04:17 ERROR Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> ❌ Step failed - capturing screenshot
+06:04:18 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> 📸 Screenshot saved: target\screenshots\Invalid_user_should_not_login_chrome_10-06-2026_18-04-18-061.png
+06:04:18 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> ========== SCENARIO ENDED ==========
+06:04:18 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> Scenario Status: FAILED
+06:04:18 INFO  Utilities.log - [BROWSER: chrome] [SCENARIO: Invalid user should not login [chrome]] [THREAD: TestNG-PoolService-1] -> 🛑 Closing browser
+06:04:18 INFO  Utilities.log - [BROWSER: null] [SCENARIO: null] [THREAD: TestNG-PoolService-1] -> ✅ Browser closed successfully

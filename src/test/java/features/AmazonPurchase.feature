@@ -38,13 +38,10 @@ Examples:
 | user        | productName |
 | validUser01 | Thermometer |
 
-Examples:
-| phone      | password   | productName |
-| 8630718216 | Kaushik21# | Thermometer |
- 
+
 
 # ❌ INVALID USER FLOW
-@Smoke @Regression
+@Smoke 
 Scenario Outline: Invalid user should not login
 
   Given User enters the valid phone number "<phone>" into the fieldbox
@@ -57,8 +54,7 @@ Examples:
 
 
 
-
-@Smoke @Regression
+ @Regression
 Scenario Outline: Valid user enters wrong password
 
   Given User enters the valid phone number "<phone>" into the fieldbox

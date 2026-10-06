@@ -82,7 +82,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
     //update for git
 
     // ✅ Failed scenario rerun (Fixed)
-    /*
+    
     @AfterSuite
     public void rerunFailedScenarios() {
 
@@ -92,7 +92,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
             log.logger.info("🔥 Rerunning Failed Scenarios...");
 
-            for (int i = 1; i <= 2; i++) {
+            for (int i = 1; i <= 1; i++) { {
 
                 org.testng.TestNG testng = new org.testng.TestNG();
 
@@ -112,7 +112,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
             log.logger.info("✅ No failed scenarios to rerun");
         }
     }
-    */
+    
 }
 
 
