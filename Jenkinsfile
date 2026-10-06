@@ -41,6 +41,7 @@ pipeline {
     showFailedBuilds: true
 )
             archiveArtifacts artifacts: 'target/*.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'target/screenshots/**', allowEmptyArchive: true
 
             publishHTML([
                 reportDir: 'target',

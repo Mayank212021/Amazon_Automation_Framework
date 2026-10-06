@@ -22,7 +22,7 @@ import io.cucumber.testng.CucumberOptions;
 	    features = "src/test/java/features/AmazonPurchase.feature",
 	    glue = "stepDefinitions",
 	    tags = "@Smoke",
-	    monochrome = true,
+	    monochrome = true, 
 	    		 plugin = {
 	    			        "pretty",
 	    			        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"

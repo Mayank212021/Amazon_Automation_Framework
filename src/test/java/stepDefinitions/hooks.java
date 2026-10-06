@@ -78,7 +78,7 @@ public class hooks {
 	            String scenarioName = scenarioObj.getName()
 	                    .replaceAll("[^a-zA-Z0-9-_]", "_");
 
-	            String browser = baseClass.getBrowser();
+	            String browser = baseClass.getBrowser(); 
 
 	            String fileName = scenarioName
 	                    + "_" + browser
