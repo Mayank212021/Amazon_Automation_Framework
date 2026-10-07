@@ -40,12 +40,16 @@ pipeline {
     def metricsFile = 'target/retry-metrics.properties'
 
     if (fileExists(metricsFile)) {
-        def metrics = readProperties file: metricsFile
 
-        env.RETRY_EXECUTED = metrics['retryExecuted'] ?: '0'
-        env.RECOVERED_BY_RETRY = metrics['recoveredByRetry'] ?: '0'
-        env.FINAL_FAILURES = metrics['finalFailures'] ?: '0'
-    } else {
+    def metrics = readProperties file: metricsFile
+
+    echo "📊 Retry Metrics File Found: ${metricsFile}"
+    echo "📊 Retry Metrics: ${metrics}"
+
+    env.RETRY_EXECUTED = metrics['retryExecuted'] ?: '0'
+    env.RECOVERED_BY_RETRY = metrics['recoveredByRetry'] ?: '0'
+    env.FINAL_FAILURES = metrics['finalFailures'] ?: '0'
+}else {
         env.RETRY_EXECUTED = '0'
         env.RECOVERED_BY_RETRY = '0'
         env.FINAL_FAILURES = '0'
