@@ -36,7 +36,7 @@ pipeline {
 			
 			
 			
-			sscript {
+			script {
     def metricsFile = 'target/retry-metrics.properties'
 
     if (fileExists(metricsFile)) {
