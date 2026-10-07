@@ -109,7 +109,7 @@ public class testRunner extends AbstractTestNGCucumberTests {
                 testng.setVerbose(1);
 
                 testng.run();
-                
+
                 int rerunStatus = testng.getStatus();
 
                 if (rerunStatus == 0) {
@@ -125,6 +125,11 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
             log.logger.info("✅ No failed scenarios to rerun");
         }
+        System.out.println("🔥 GENERATING RETRY METRICS NOW...");
+
+        RetryMetrics.generateReport();
+
+        System.out.println("🔥 RETRY METRICS GENERATION COMPLETED");
     }
     
 }
