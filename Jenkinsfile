@@ -34,6 +34,26 @@ pipeline {
     post {
         always { 
 			
+			
+			
+			script {
+    def metricsFile = 'target/retry-metrics.properties'
+
+    if (fileExists(metricsFile)) {
+        def metrics = readProperties file: metricsFile
+
+        env.RETRY_EXECUTED = metrics['retryExecuted'] ?: '0'
+        env.RECOVERED_BY_RETRY = metrics['recoveredByRetry'] ?: '0'
+        env.FINAL_FAILURES = metrics['finalFailures'] ?: '0'
+    } else {
+        env.RETRY_EXECUTED = '0'
+        env.RECOVERED_BY_RETRY = '0'
+        env.FINAL_FAILURES = '0'
+    }
+}
+			
+			
+			
             testNG(
     reportFilenamePattern: 'target/surefire-reports/testng-results.xml',
     escapeExceptionMsg: true,
@@ -119,15 +139,15 @@ pipeline {
         </tr>
         <tr>
             <td>Retry Executed</td>
-            <td>See Console Log / Cucumber Report</td>
+            <td>${env.RETRY_EXECUTED == '1' ? 'Yes' : 'No'}</td>
         </tr>
         <tr>
             <td>Recovered by Retry</td>
-            <td>To be calculated</td>
+            <td>${env.RECOVERED_BY_RETRY}</td>
         </tr>
         <tr>
             <td>Final Failures</td>
-            <td>To be calculated</td>
+           <td>${env.FINAL_FAILURES}</td>
         </tr>
     </table>
 

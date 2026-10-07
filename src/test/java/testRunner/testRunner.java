@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
+import Utilities.RetryMetrics;
 
 import Utilities.log;
 import base.baseClass;
@@ -94,21 +94,35 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
             log.logger.info("🔥 Rerunning Failed Scenarios...");
 
+            RetryMetrics.markRetryExecuted();
+
             for (int i = 1; i <= 1; i++) {
 
-                org.testng.TestNG testng = new org.testng.TestNG();
+                org.testng.TestNG testng =
+                        new org.testng.TestNG();
 
-                testng.setTestClasses(new Class[]{failedTestRunner.class});
+                testng.setTestClasses(
+                        new Class[]{failedTestRunner.class});
 
                 testng.setDefaultSuiteName("RerunSuite");
                 testng.setDefaultTestName("RerunTest");
-
                 testng.setVerbose(1);
 
                 testng.run();
+                
+                int rerunStatus = testng.getStatus();
+
+                if (rerunStatus == 0) {
+                    RetryMetrics.recordRetryResult(true);
+                    log.logger.info("✅ Retry PASSED - Scenario recovered");
+                } else {
+                    RetryMetrics.recordRetryResult(false);
+                    log.logger.info("❌ Retry FAILED - Final failure");
+                }
             }
 
         } else {
+
             log.logger.info("✅ No failed scenarios to rerun");
         }
     }
