@@ -177,29 +177,10 @@ foreach ($stackLine in $errorLines) {
 
                     $safeLine =
                         [System.Net.WebUtility]::HtmlEncode($lineNumber)
-
-                    $html += @"
-<hr>
-
-<p><b>Failure #$failureNumber</b></p>
-
-<p><b>Scenario:</b> $safeScenario</p>
-
-<p><b>Failed Step:</b> $safeStep</p>
-
-<p><b>Exception:</b> $safeException</p>
-
-<p><b>Error Message:</b><br>
-$safeError
-</p>
-
-<p><b>Source:</b> $safeSource</p>
-
-<p><b>Line:</b> $safeLine</p>
-
-
-
-$safeScenarioFile = [regex]::Replace($scenario.name, '[^a-zA-Z0-9-_]', '_')
+                        
+                        
+                        
+                        $safeScenarioFile = [regex]::Replace($scenario.name, '[^a-zA-Z0-9-_]', '_')
 
 $screenshots = @(
     Get-ChildItem "target/screenshots/*.png" |
@@ -231,7 +212,28 @@ if ($screenshots.Count -gt 0) {
 
     $screenshotHtml += "</p>"
 }
+                        
+                        
+                        
 
+                    $html += @"
+<hr>
+
+<p><b>Failure #$failureNumber</b></p>
+
+<p><b>Scenario:</b> $safeScenario</p>
+
+<p><b>Failed Step:</b> $safeStep</p>
+
+<p><b>Exception:</b> $safeException</p>
+
+<p><b>Error Message:</b><br>
+$safeError
+</p>
+
+<p><b>Source:</b> $safeSource</p>
+
+<p><b>Line:</b> $safeLine</p>
 $screenshotHtml
 "@
                 }
