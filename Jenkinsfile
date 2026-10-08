@@ -118,17 +118,9 @@ script {
                     $source = "Not available"
                     $lineNumber = "Not available"
 
-                    foreach ($line in $errorLines) {
-
-                        if ($line -match '\(([^()]+[.]java):([0-9]+)\)') {
-                            $source = $Matches[1]
-                            $lineNumber = $Matches[2]
-                        }
-
-                        if ($line -match '([A-Za-z0-9_.]+Exception|[A-Za-z0-9_.]+Error)') {
-                            $exception = $Matches[1]
-                        }
-                    }
+   $exception = "Test Failure"
+$source = "See Cucumber Report"
+$lineNumber = "See Cucumber Report"
 
                     $safeScenario =
                         [System.Net.WebUtility]::HtmlEncode($scenario.name)
