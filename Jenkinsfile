@@ -197,9 +197,42 @@ $safeError
 
 <p><b>Line:</b> $safeLine</p>
 
-<p><b>📸 Screenshot:</b>
-Check Jenkins Build Artifacts
-</p>
+
+
+$safeScenarioFile = [regex]::Replace($scenario.name, '[^a-zA-Z0-9-_]', '_')
+
+$screenshots = @(
+    Get-ChildItem "target/screenshots/*.png" |
+    Where-Object {
+        $_.Name.StartsWith($safeScenarioFile + "_")
+    } |
+    Sort-Object LastWriteTime
+)
+
+$screenshotHtml = "<p><b>📸 Screenshot:</b> Not available</p>"
+
+if ($screenshots.Count -gt 0) {
+
+    $screenshotHtml = "<p><b>📸 Screenshot:</b><br>"
+
+    $shotNumber = 0
+
+    foreach ($shot in $screenshots) {
+
+        $shotNumber++
+
+        $artifactUrl = $env:BUILD_URL +
+                        "artifact/target/screenshots/" +
+                        $shot.Name
+
+        $screenshotHtml +=
+            "<a href='$artifactUrl'>View Screenshot #$shotNumber</a><br>"
+    }
+
+    $screenshotHtml += "</p>"
+}
+
+$screenshotHtml
 "@
                 }
             }
