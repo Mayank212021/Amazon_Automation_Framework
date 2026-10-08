@@ -206,8 +206,14 @@ if ($screenshots.Count -gt 0) {
                         "artifact/target/screenshots/" +
                         $shot.Name
 
-        $screenshotHtml +=
-            "<a href='$artifactUrl'>View Screenshot #$shotNumber</a><br>"
+        if ($shotNumber -eq 1) {
+    $runLabel = "Normal Run"
+} else {
+    $runLabel = "Retry #" + ($shotNumber - 1)
+}
+
+$screenshotHtml +=
+    "<a href='$artifactUrl'>$runLabel - View Screenshot</a><br>"
     }
 
     $screenshotHtml += "</p>"
@@ -384,9 +390,7 @@ ${env.FAILURE_ANALYSIS}
         </a>
     </p>
 
-<p>
-    🔹 Screenshots are available in Jenkins Build Artifacts.
-</p>
+
     <hr>
 
     <p>
