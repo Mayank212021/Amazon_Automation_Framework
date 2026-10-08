@@ -292,7 +292,7 @@ $screenshotHtml
                 allowMissing: true
             ])
             
-            
+            script {
             if (currentBuild.currentResult == 'SUCCESS') {
 
     emailext(
@@ -485,6 +485,7 @@ ${env.FAILURE_ANALYSIS}
     attachmentsPattern: 'target/ExtentReport_*.html',
     attachLog: true
 )
+}
 }
         }
     }
