@@ -190,11 +190,11 @@ $screenshots = @(
     Sort-Object LastWriteTime
 )
 
-$screenshotHtml = "<p><b>📸 Screenshot:</b> Not available</p>"
+$screenshotHtml = "<p><b>Screenshot:</b> Not available</p>"
 
 if ($screenshots.Count -gt 0) {
 
-    $screenshotHtml = "<p><b>📸 Screenshot:</b><br>"
+    $screenshotHtml = "<p><b>Screenshot:</b><br>"
 
     $shotNumber = 0
 
