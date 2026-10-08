@@ -68,6 +68,129 @@ pipeline {
         env.FINAL_FAILURES = '0'
     }
 }
+
+
+script {
+    echo "🔎 Generating Failure Analysis..."
+
+    powershell '''
+        $jsonFile = Get-ChildItem "target\\cucumber-*.json" |
+                    Sort-Object LastWriteTime -Descending |
+                    Select-Object -First 1
+
+        if ($null -eq $jsonFile) {
+            "<p>⚠️ Failure Analysis: Cucumber JSON report not found.</p>" |
+            Set-Content "target\\failure-analysis.html"
+            exit 0
+        }
+
+        $data = Get-Content $jsonFile.FullName -Raw | ConvertFrom-Json
+
+        $html = "<h3>❌ FAILURE ANALYSIS</h3>"
+
+        $failureNumber = 0
+
+        foreach ($feature in $data) {
+
+            foreach ($scenario in $feature.elements) {
+
+                $failedSteps = @(
+                    $scenario.steps | Where-Object {
+                        $_.result.status -eq "failed"
+                    }
+                )
+
+                if ($failedSteps.Count -gt 0) {
+
+                    $failureNumber++
+
+                    $failedStep = $failedSteps[0]
+
+                    $errorMessage = $failedStep.result.error_message
+
+                    if ([string]::IsNullOrWhiteSpace($errorMessage)) {
+                        $errorMessage = "Failure details not available."
+                    }
+
+                    $errorLines = $errorMessage -split "`r?`n"
+
+                    $exception = "Test Failure"
+                    $source = "Not available"
+                    $lineNumber = "Not available"
+
+                    foreach ($line in $errorLines) {
+
+                        if ($line -match '\(([^()]+\.java):(\d+)\)') {
+                            $source = $Matches[1]
+                            $lineNumber = $Matches[2]
+                        }
+
+                        if ($line -match '([A-Za-z0-9_.]+Exception|[A-Za-z0-9_.]+Error)') {
+                            $exception = $Matches[1]
+                        }
+                    }
+
+                    $safeScenario =
+                        [System.Net.WebUtility]::HtmlEncode($scenario.name)
+
+                    $safeStep =
+                        [System.Net.WebUtility]::HtmlEncode($failedStep.name)
+
+                    $safeError =
+                        [System.Net.WebUtility]::HtmlEncode($errorLines[0])
+
+                    $safeException =
+                        [System.Net.WebUtility]::HtmlEncode($exception)
+
+                    $safeSource =
+                        [System.Net.WebUtility]::HtmlEncode($source)
+
+                    $safeLine =
+                        [System.Net.WebUtility]::HtmlEncode($lineNumber)
+
+                    $html += @"
+<hr>
+
+<p><b>Failure #$failureNumber</b></p>
+
+<p><b>Scenario:</b> $safeScenario</p>
+
+<p><b>Failed Step:</b> $safeStep</p>
+
+<p><b>Exception:</b> $safeException</p>
+
+<p><b>Error Message:</b><br>
+$safeError
+</p>
+
+<p><b>Source:</b> $safeSource</p>
+
+<p><b>Line:</b> $safeLine</p>
+
+<p><b>📸 Screenshot:</b>
+Check Jenkins Build Artifacts
+</p>
+"@
+                }
+            }
+        }
+
+        if ($failureNumber -eq 0) {
+            $html = "<h3>✅ FAILURE ANALYSIS</h3><p>No failed scenarios found.</p>"
+        }
+
+        $html | Set-Content "target\\failure-analysis.html"
+    '''
+
+    if (fileExists('target/failure-analysis.html')) {
+        env.FAILURE_ANALYSIS = readFile('target/failure-analysis.html')
+        echo "✅ Failure Analysis generated successfully"
+    } else {
+        env.FAILURE_ANALYSIS =
+            '<p>⚠️ Failure Analysis not available.</p>'
+    }
+}
+
 			
 			
 			
@@ -170,10 +293,7 @@ pipeline {
 
     <h3>❌ Failure Details</h3>
 
-    <p>
-        Detailed exception, failed step, source line and stack trace
-        are available in the Jenkins Console Log and Cucumber Report.
-    </p>
+${env.FAILURE_ANALYSIS}
 
     <h3>📄 Reports & Artifacts</h3>
 
