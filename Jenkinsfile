@@ -114,14 +114,50 @@ script {
 
                     $errorLines = $errorMessage -split "`r?`n"
 
-                    $exception = "Test Failure"
-                    $source = "Not available"
-                    $lineNumber = "Not available"
-
-   $exception = "Test Failure"
+                   $exception = "Test Failure"
 $source = "See Cucumber Report"
 $lineNumber = "See Cucumber Report"
 
+$firstLine = $errorLines[0]
+
+$colonIndex = $firstLine.IndexOf(":")
+
+if ($colonIndex -gt 0) {
+    $exception = $firstLine.Substring(0, $colonIndex).Trim()
+}
+
+foreach ($stackLine in $errorLines) {
+
+    if ($stackLine.Contains(".java:") -and $stackLine.Contains("(")) {
+
+        $openBracket = $stackLine.LastIndexOf("(")
+        $closeBracket = $stackLine.LastIndexOf(")")
+
+        if ($openBracket -ge 0 -and $closeBracket -gt $openBracket) {
+
+            $location = $stackLine.Substring(
+                $openBracket + 1,
+                $closeBracket - $openBracket - 1
+            )
+
+            $colonIndex = $location.LastIndexOf(":")
+
+            if ($colonIndex -gt 0) {
+
+                $source = $location.Substring(
+                    0,
+                    $colonIndex
+                )
+
+                $lineNumber = $location.Substring(
+                    $colonIndex + 1
+                )
+
+                break
+            }
+        }
+    }
+}
                     $safeScenario =
                         [System.Net.WebUtility]::HtmlEncode($scenario.name)
 
