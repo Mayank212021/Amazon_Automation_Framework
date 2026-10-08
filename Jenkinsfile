@@ -128,7 +128,9 @@ if ($colonIndex -gt 0) {
 
 foreach ($stackLine in $errorLines) {
 
-    if ($stackLine.Contains(".java:") -and $stackLine.Contains("(")) {
+    if ($stackLine.Contains(".java:") -and
+    $stackLine.Contains("(") -and
+    -not $stackLine.Contains("org.testng")) {
 
         $openBracket = $stackLine.LastIndexOf("(")
         $closeBracket = $stackLine.LastIndexOf(")")
