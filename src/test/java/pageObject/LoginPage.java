@@ -46,11 +46,11 @@ WebDriver ldriver;
 	WebElement helloUserText;
 	
 	
-	//@FindBy(xpath = "//p[@class='a-spacing-none a-spacing-top-base']")
-	//private WebElement errorMessageBox;
-	
-	@FindBy(xpath = "//p[@class='WRONG-XPATH-FOR-RETRY-TEST']")
+	@FindBy(xpath = "//p[@class='a-spacing-none a-spacing-top-base']")
 	private WebElement errorMessageBox;
+	
+	//@FindBy(xpath = "//p[@class='WRONG-XPATH-FOR-RETRY-TEST']")
+	//private WebElement errorMessageBox;
 	
 	@FindBy(xpath = "//div[@class='a-section a-spacing-base auth-pagelet-container']//div[@class='a-box-inner a-alert-container']//div[1]")
 	private WebElement incorrectMessage;
