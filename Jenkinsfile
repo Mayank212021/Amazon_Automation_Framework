@@ -120,7 +120,7 @@ script {
 
                     foreach ($line in $errorLines) {
 
-                        if ($line -match '\(([^()]+\.java):(\d+)\)') {
+                        if ($line -match '\(([^()]+[.]java):([0-9]+)\)') {
                             $source = $Matches[1]
                             $lineNumber = $Matches[2]
                         }
