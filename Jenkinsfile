@@ -250,6 +250,37 @@ Check Jenkins Build Artifacts
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
+            
+            
+            script {
+    def screenshotFiles = findFiles(glob: 'target/screenshots/*.png')
+
+    if (screenshotFiles.length > 0) {
+
+        def links = ""
+
+        screenshotFiles.each { file ->
+
+            links += """
+            <p>
+                📸 <a href="${env.BUILD_URL}artifact/${file.path}">
+                    View Screenshot: ${file.name}
+                </a>
+            </p>
+            """
+        }
+
+        env.SCREENSHOT_LINKS = links
+
+    } else {
+
+        env.SCREENSHOT_LINKS =
+            "<p>📸 No screenshot available for this build.</p>"
+    }
+}
+            
+            
+            
 
          emailext(
     to: 'kaushikmayank961@gmail.com',
@@ -345,9 +376,7 @@ ${env.FAILURE_ANALYSIS}
         </a>
     </p>
 
-    <p>
-        🔹 Screenshots are available in Jenkins Build Artifacts.
-    </p>
+    ${env.SCREENSHOT_LINKS}
 
     <hr>
 
