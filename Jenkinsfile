@@ -29,6 +29,39 @@ pipeline {
        bat 'mvn test -Dbrowser=%browser% -Dcucumber.filter.tags=%TEST_TYPE%'
     }
 }
+
+
+stage('Quality Gate') {
+    steps {
+        script {
+            def metricsFile = 'target/retry-metrics.properties'
+
+            if (!fileExists(metricsFile)) {
+                error('Quality Gate FAILED: Retry metrics file not found')
+            }
+
+            def metrics = readFile(metricsFile)
+            def match = metrics =~ /(?m)^finalFailures=(\d+)\s*$/
+
+            if (!match.find()) {
+                error('Quality Gate FAILED: finalFailures value missing')
+            }
+
+            int failures = match.group(1).toInteger()
+
+            if (failures > 0) {
+                error("Quality Gate FAILED: ${failures} final failures")
+            }
+
+            echo 'Quality Gate PASSED: Zero final failures'
+        }
+    }
+}
+
+
+
+
+
     } 
 
     post {
