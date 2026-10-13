@@ -160,30 +160,43 @@ if ($colonIndex -gt 0) {
 }
 
 
+
 foreach ($stackLine in $errorLines) {
 
-    # Read Java stack-trace frames
-    
-if ($stackLine -match '^ *at +([^ (]+)\(([^():]+[.]java):([0-9]+)\)') {
+    if ($stackLine -match ' at ' -and $stackLine -match '[.]java:[0-9]+[)]') {
 
-
-        $className = $Matches[1]
-        $fileName  = $Matches[2]
-        $line      = $Matches[3]
-
-        # Ignore Java, Selenium and testing-library internal classes
+        # Skip internal Java, Selenium, TestNG and Cucumber frames
         if (
-            $className -match '^(java\.|javax\.|jdk\.|sun\.|org\.openqa\.selenium\.|org\.testng\.|io\.cucumber\.|org\.junit\.)'
+            $stackLine -match 'org[.]openqa[.]selenium[.]' -or
+            $stackLine -match 'org[.]testng[.]' -or
+            $stackLine -match 'io[.]cucumber[.]' -or
+            $stackLine -match 'java[.]' -or
+            $stackLine -match 'jdk[.]' -or
+            $stackLine -match 'sun[.]'
         ) {
             continue
         }
 
-        # Prefer the first application/framework class
-        $source = $fileName
-        $lineNumber = $line
-        break
+        $openBracket = $stackLine.LastIndexOf('(')
+        $closeBracket = $stackLine.LastIndexOf(')')
+
+        if ($openBracket -ge 0 -and $closeBracket -gt $openBracket) {
+            $location = $stackLine.Substring(
+                $openBracket + 1,
+                $closeBracket - $openBracket - 1
+            )
+
+            $colonIndex = $location.LastIndexOf(':')
+
+            if ($colonIndex -gt 0) {
+                $source = $location.Substring(0, $colonIndex)
+                $lineNumber = $location.Substring($colonIndex + 1)
+                break
+            }
+        }
     }
 }
+
 
                     $safeScenario =
                         [System.Net.WebUtility]::HtmlEncode($scenario.name)
