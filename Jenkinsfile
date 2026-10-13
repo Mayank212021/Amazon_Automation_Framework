@@ -165,7 +165,7 @@ if ($colonIndex -gt 0) {
 foreach ($stackLine in $errorLines) {
 
     if (
-        $stackLine.Contains(".java:") -and
+        $stackLine.Contains(".java:") -and 
         $stackLine.Contains("(") -and
         -not $stackLine.Contains("org.openqa.selenium") -and
         -not $stackLine.Contains("org.testng") -and
