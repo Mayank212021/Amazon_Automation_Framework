@@ -161,32 +161,30 @@ if ($colonIndex -gt 0) {
 
 
 
+
 foreach ($stackLine in $errorLines) {
 
-    if ($stackLine -match ' at ' -and $stackLine -match '[.]java:[0-9]+[)]') {
+    if (
+        $stackLine.Contains(".java:") -and
+        $stackLine.Contains("(") -and
+        -not $stackLine.Contains("org.openqa.selenium") -and
+        -not $stackLine.Contains("org.testng") -and
+        -not $stackLine.Contains("io.cucumber") -and
+        -not $stackLine.Contains("java.") -and
+        -not $stackLine.Contains("jdk.")
+    ) {
 
-        # Skip internal Java, Selenium, TestNG and Cucumber frames
-        if (
-            $stackLine -match 'org[.]openqa[.]selenium[.]' -or
-            $stackLine -match 'org[.]testng[.]' -or
-            $stackLine -match 'io[.]cucumber[.]' -or
-            $stackLine -match 'java[.]' -or
-            $stackLine -match 'jdk[.]' -or
-            $stackLine -match 'sun[.]'
-        ) {
-            continue
-        }
-
-        $openBracket = $stackLine.LastIndexOf('(')
-        $closeBracket = $stackLine.LastIndexOf(')')
+        $openBracket = $stackLine.LastIndexOf("(")
+        $closeBracket = $stackLine.LastIndexOf(")")
 
         if ($openBracket -ge 0 -and $closeBracket -gt $openBracket) {
+
             $location = $stackLine.Substring(
                 $openBracket + 1,
                 $closeBracket - $openBracket - 1
             )
 
-            $colonIndex = $location.LastIndexOf(':')
+            $colonIndex = $location.LastIndexOf(":")
 
             if ($colonIndex -gt 0) {
                 $source = $location.Substring(0, $colonIndex)
@@ -196,6 +194,7 @@ foreach ($stackLine in $errorLines) {
         }
     }
 }
+
 
 
                     $safeScenario =
