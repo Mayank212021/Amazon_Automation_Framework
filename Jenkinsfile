@@ -159,40 +159,30 @@ if ($colonIndex -gt 0) {
     $exception = $firstLine.Substring(0, $colonIndex).Trim()
 }
 
+
 foreach ($stackLine in $errorLines) {
 
-    if ($stackLine.Contains(".java:") -and
-    $stackLine.Contains("(") -and
-    -not $stackLine.Contains("org.testng")) {
+    # Read Java stack-trace frames
+    if ($stackLine -match '^\s*at\s+([^\s(]+)\(([^():]+\.java):(\d+)\)') {
 
-        $openBracket = $stackLine.LastIndexOf("(")
-        $closeBracket = $stackLine.LastIndexOf(")")
+        $className = $Matches[1]
+        $fileName  = $Matches[2]
+        $line      = $Matches[3]
 
-        if ($openBracket -ge 0 -and $closeBracket -gt $openBracket) {
-
-            $location = $stackLine.Substring(
-                $openBracket + 1,
-                $closeBracket - $openBracket - 1
-            )
-
-            $colonIndex = $location.LastIndexOf(":")
-
-            if ($colonIndex -gt 0) {
-
-                $source = $location.Substring(
-                    0,
-                    $colonIndex
-                )
-
-                $lineNumber = $location.Substring(
-                    $colonIndex + 1
-                )
-
-                break
-            }
+        # Ignore Java, Selenium and testing-library internal classes
+        if (
+            $className -match '^(java\.|javax\.|jdk\.|sun\.|org\.openqa\.selenium\.|org\.testng\.|io\.cucumber\.|org\.junit\.)'
+        ) {
+            continue
         }
+
+        # Prefer the first application/framework class
+        $source = $fileName
+        $lineNumber = $line
+        break
     }
 }
+
                     $safeScenario =
                         [System.Net.WebUtility]::HtmlEncode($scenario.name)
 
