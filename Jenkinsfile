@@ -163,7 +163,9 @@ if ($colonIndex -gt 0) {
 foreach ($stackLine in $errorLines) {
 
     # Read Java stack-trace frames
-    if ($stackLine -match '^\s*at\s+([^\s(]+)\(([^():]+\.java):(\d+)\)') {
+    
+if ($stackLine -match '^ *at +([^ (]+)\(([^():]+[.]java):([0-9]+)\)') {
+
 
         $className = $Matches[1]
         $fileName  = $Matches[2]
