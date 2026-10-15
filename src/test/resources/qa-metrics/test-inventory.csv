@@ -1,6 +1,4 @@
-Feature,TestCase,Automated
-Login,Valid login,true
-Login,Invalid login,true
-Product Search,Search product,true
-Cart,Add product to cart,true
-Checkout,Place order,false
+Feature	 TestCase	                                           Automated
+Amazon   shopping / Login	Valid user adds product to cart	   TRUE
+Login	Invalid user should not login	                       TRUE
+Login	Valid user enters wrong password	                   TRUE
