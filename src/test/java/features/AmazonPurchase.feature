@@ -8,7 +8,7 @@ Background:
 
 
 # ✅ VALID USER FLOW
-@Regression
+@Smoke @Regression
 Scenario Outline: Valid user adds product to cart
 
   Given User logs in with valid credentials "<user>"
@@ -35,7 +35,7 @@ Scenario Outline: Valid user adds product to cart
   And User selects the payment method
 
 Examples:
-| user        | productName |
+| user        | productName | 
 | validUser01 | Thermometer |
 
 
@@ -54,7 +54,7 @@ Examples:
 
 
 
- @Regression
+@Smoke @Regression
 Scenario Outline: Valid user enters wrong password
 
   Given User enters the valid phone number "<phone>" into the fieldbox
