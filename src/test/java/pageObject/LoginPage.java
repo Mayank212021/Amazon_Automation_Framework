@@ -33,11 +33,11 @@ WebDriver ldriver;
 	@FindBy(id = "ap_email_login")
 	WebElement emailAddress;
 	
-	//@FindBy(xpath = "//input[@type='submit']") 
-	//WebElement continueButton;
-	
-	@FindBy(xpath = "//input[@type='submit1111']") // Wrong xapth 
+	@FindBy(xpath = "//input[@type='submit']")
 	WebElement continueButton;
+	
+	//@FindBy(xpath = "//input[@type='submit1111']") // Wrong xpath 
+	//WebElement continueButton;
 	
 	@FindBy(id = "ap_password")
 	WebElement passWord;
