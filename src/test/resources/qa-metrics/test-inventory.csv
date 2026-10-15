@@ -1,4 +1,3 @@
-
 Feature,TestCase,Automated
 Amazon shopping / Login,Valid user adds product to cart,TRUE
 Login,Invalid user should not login,TRUE
