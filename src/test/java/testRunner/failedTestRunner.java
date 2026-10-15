@@ -1,6 +1,7 @@
 package testRunner;
 
 import java.text.SimpleDateFormat;
+
 import java.util.Date;
 
 import org.testng.annotations.BeforeMethod;
@@ -11,6 +12,7 @@ import base.baseClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+@org.testng.annotations.Listeners(Utilities.RetryResultListener.class)
 @CucumberOptions(
     features = "@target/failed_scenario.txt", 
     glue = "stepDefinitions",

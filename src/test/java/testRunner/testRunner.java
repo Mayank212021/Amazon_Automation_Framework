@@ -110,14 +110,10 @@ public class testRunner extends AbstractTestNGCucumberTests {
 
                 testng.run();
 
-                int rerunStatus = testng.getStatus();
-
-                if (rerunStatus == 0) {
-                    RetryMetrics.recordRetryResult(true);
-                    log.logger.info("✅ Retry PASSED - Scenario recovered");
+                if (testng.getStatus() == 0) {
+                    log.logger.info("✅ Retry suite completed successfully");
                 } else {
-                    RetryMetrics.recordRetryResult(false);
-                    log.logger.info("❌ Retry FAILED - Final failure");
+                    log.logger.info("❌ Retry suite completed with failures");
                 }
             }
 
