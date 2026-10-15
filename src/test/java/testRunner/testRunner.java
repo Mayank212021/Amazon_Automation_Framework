@@ -23,10 +23,11 @@ import io.cucumber.testng.CucumberOptions;
 	    glue = "stepDefinitions",
 	    tags = "@Smoke",
 	    monochrome = true, 
-	    		 plugin = {
-	    			        "pretty",
-	    			        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-	    			    }
+	    		plugin = {
+	    			    "pretty",
+	    			    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+	    			    "json:target/cucumber-reports/cucumber.json"
+	    			}
 	) 
 
 
