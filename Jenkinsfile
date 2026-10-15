@@ -105,7 +105,7 @@ stage('Quality Gate') {
 
 script {
     echo "🔎 Generating Failure Analysis..."
-
+              
     powershell '''
         $jsonFile = Get-ChildItem "target\\cucumber-*.json" |
                     Sort-Object LastWriteTime -Descending |
@@ -304,7 +304,7 @@ $screenshotHtml
 
             script {
                 echo "Generating QA Metrics Report..."
-
+              try {
                 powershell '''
                     $xmlPath = "target/surefire-reports/testng-results.xml"
                     $outputPath = "target/qa-metrics.html"
@@ -346,7 +346,7 @@ if (Test-Path $inventoryPath) {
 
     $automatedCount = @(
         $inventory | Where-Object {
-            $_.Automated.Trim().ToLower() -eq "true"
+            ([string]$_.Automated).Trim().ToLowerInvariant() -eq "true"
         }
     ).Count
 
@@ -424,7 +424,12 @@ if (Test-Path $inventoryPath) {
                     }
                 '''
             }
-
+              
+     catch (Exception e) {
+        echo "WARNING: QA Metrics report failed: ${e.getMessage()}"
+        echo "Continuing with email notification."
+    }
+           }
 			
 			
 			
