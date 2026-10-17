@@ -7,7 +7,7 @@ pipeline {
     }
 
     triggers {
-        parameterizedCron('30 23 * * * %browser=edge;TEST_TYPE=@Regression')
+        parameterizedCron('30 23 * * * %browser=chrome;TEST_TYPE=@Smoke')
     }
 
     stages {
